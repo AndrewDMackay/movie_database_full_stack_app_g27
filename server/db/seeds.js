@@ -1,3 +1,4 @@
+
 use movie_users;
 db.dropDatabase();
 
@@ -28,3 +29,4 @@ db.users.insertMany([
         ]
     }
 ]);
+
