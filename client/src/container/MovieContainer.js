@@ -1,37 +1,38 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
+import MovieList from "../components/main_movie_page/MovieList"
+import MovieDetail from '../components/movie_detail/MovieDetail'
 
 const MovieContainer = () => {
     const [movies, setMovies] = useState([])
+    const [selectedMovie, setSelectedMovie] = useState(null)
 
-    // searches API by movie title
-    const getMoviesByTitle = function(movieTitle){
+    useEffect(() => {
+        getMoviesByTitle();
+    });
 
-        fetch(`http://www.omdbapi.com/?t=$batmanapikey=30f7090a`)
-        .then(res => res.json())
-        .then(movies => setMovies(movies))
+    // searches API by movie title (hardcoded for batman for example)
+    const getMoviesByTitle = function () {
+        fetch(`https://www.omdbapi.com/?s=batman&apikey=30f7090a`)
+            .then(res => res.json())
+            .then(data => setMovies(data.Search))
     }
 
-    // const getMoviesByGenre = function(genre){
+    // searches API by movie imdb id after one has been selected form the movie list
+    const onMovieClick = function (movie) {
+        fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=30f7090a`)
+            .then(res => res.json())
+            .then(data => setSelectedMovie(data))
+    }
 
-    //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
-    //     .then(res => res.json())
-    //     .then(movies => setMovies(movies))
-    // }
 
-    // const onUserReviewSubmit = (review) => {
-    //     postUserReview(review)
-    // }
 
-    // const onUserReviewDelete = (id) => {
-    //     deleteUserReview(id)
-    // }
-
-    return(
+    return (
         <>
-        <h1>RateMyPoo.com</h1>
-
+            <h1>This is the MovieContainer</h1>
+            {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
+            {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} /> : null}
         </>
     )
-} 
+}
 
 export default MovieContainer;
