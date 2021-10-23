@@ -6,7 +6,7 @@ const MovieContainer = () => {
     // searches API by movie title
     const getMoviesByTitle = function(movieTitle){
 
-        fetch(`http://www.omdbapi.com/?t=${movieTitle}apikey=30f7090a`)
+        fetch(`http://www.omdbapi.com/?t=$batmanapikey=30f7090a`)
         .then(res => res.json())
         .then(movies => setMovies(movies))
     }
@@ -18,13 +18,13 @@ const MovieContainer = () => {
     //     .then(movies => setMovies(movies))
     // }
 
-    const onUserReviewSubmit = (review) => {
-        postUserReview(review)
-    }
+    // const onUserReviewSubmit = (review) => {
+    //     postUserReview(review)
+    // }
 
-    const onUserReviewDelete = (id) => {
-        deleteUserReview(id)
-    }
+    // const onUserReviewDelete = (id) => {
+    //     deleteUserReview(id)
+    // }
 
     return(
         <>
