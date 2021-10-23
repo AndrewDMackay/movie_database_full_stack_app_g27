@@ -6,7 +6,7 @@ const MovieContainer = () => {
     // searches API by movie title
     const getMoviesByTitle = function(movieTitle){
 
-        fetch(`http://www.omdbapi.com/?t=$batmanapikey=30f7090a`)
+        fetch(`https://www.omdbapi.com/?t=batman&apikey=30f7090a`)
         .then(res => res.json())
         .then(movies => setMovies(movies))
     }
@@ -35,3 +35,4 @@ const MovieContainer = () => {
 } 
 
 export default MovieContainer;
+
