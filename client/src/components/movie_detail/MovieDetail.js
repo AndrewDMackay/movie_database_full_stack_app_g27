@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const MovieDetail = ({ selectedMovie }) => {
@@ -16,3 +17,4 @@ const MovieDetail = ({ selectedMovie }) => {
 }
 
 export default MovieDetail;
+

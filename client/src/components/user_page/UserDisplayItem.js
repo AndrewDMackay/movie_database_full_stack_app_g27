@@ -1,3 +1,4 @@
+
 import React from "react";
 
     const UserDisplayItem = ({user, onUserClick, onUserDelete}) => {
@@ -20,3 +21,4 @@ import React from "react";
         )}
 
 export default UserDisplayItem;
+

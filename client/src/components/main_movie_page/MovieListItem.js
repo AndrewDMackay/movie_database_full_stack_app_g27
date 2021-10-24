@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const MovieListItem = ({movie, onMovieClick}) => {
@@ -13,3 +14,4 @@ const MovieListItem = ({movie, onMovieClick}) => {
 }
 
 export default MovieListItem;
+

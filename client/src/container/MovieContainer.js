@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react'
 import MovieList from "../components/main_movie_page/MovieList"
 import MovieDetail from '../components/movie_detail/MovieDetail'
@@ -23,15 +24,12 @@ const MovieContainer = () => {
             .then(res => res.json())
             .then(data => setSelectedMovie(data))
     }
-<<<<<<< HEAD
 
     // const getMoviesByGenre = function(genre){
     //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
     //     .then(res => res.json())
     //     .then(movies => setMovies(movies))
     // }
-=======
->>>>>>> feature/usercomponents
 
 
 
@@ -43,9 +41,6 @@ const MovieContainer = () => {
         </>
     )
 }
-<<<<<<< HEAD
 
 export default MovieContainer;
-=======
->>>>>>> feature/usercomponents
 
