@@ -1,4 +1,7 @@
 
+/* NOTE.. This is one huge file at present, I will divide up, and import to the necessary files later.. */
+
+
 /* Font-family commands below, for imported Google Fonts.. */
 
 /* font-family: 'Amatic SC', cursive;
@@ -11,7 +14,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 body {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.8vw;
+  font-size: 1.0vw;
   color: #FDFDFF; 
 
   margin: 0;
@@ -45,7 +48,7 @@ body {
   margin-left: 10.0vw;
   margin-right: 10.0vw;
   margin-top: 0;
-  padding: 1.0vw;
+  padding: 5.0vw;
 
   border: 0.1vw solid #B2B2B2;
   background-color: #090909
@@ -92,6 +95,17 @@ body {
 }
 
 
+.movie-detail-container {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1.0vw;
+  padding: 1.0vw; 
+}
+
+
 .movie-detail {
   align-items: center;
   align-content: center;
@@ -100,9 +114,9 @@ body {
 
   margin: 0.5vw;
   padding: 0.5vw; 
-  min-width: 23.0vw;
-  min-height: 35.0vw;
-  /* line-height: 1.0vw; */
+  min-width: 45.0vw;
+  min-height: 55.0vw;
+  line-height: 1.0vw;
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
@@ -111,12 +125,20 @@ body {
 
 /*  Images, List Item posters/ */
 
-  .list-item-poster {
+.list-item-poster {
     margin-top: 1.0vw;
     height: 25.0vw;
     width: auto;
     border: 0.1vw solid #F8F8FF;
     box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+.movie-detail-poster {
+  margin-top: 1.0vw;
+  height: 35.0vw;
+  width: auto;
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
 
 
@@ -145,7 +167,7 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 2.0vw;
+  font-size: 2.5vw;
   text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
 
   margin: 0.5vw;
@@ -155,7 +177,7 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2.0vw;
   text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
 
   margin: 0.5vw;
@@ -165,7 +187,7 @@ h4 {
 
 h5 {
   font-weight: bold;
-  font-size: 1.0vw;
+  font-size: 1.5vw;
   text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
 
   margin: 0.5vw;
