@@ -316,6 +316,18 @@ a:active {
 
 /* Icons, and buttons replaced with images.. */
 
+.movie-detail-icon {
+  font-size: 0.8vw;
+  color: #FFFFFF;
+}
+
+
+/* .logo-icon {
+  font-size: 0.8vw;
+  color: #FFFFFF;
+} */
+
+
 /* .image-button {
   display: contents;
   cursor: pointer;
@@ -329,24 +341,6 @@ a:active {
   cursor: pointer;
   font-size: 0.8vw;
 }
-
-
-#icon {
-  font-size: 0.8vw;
-  color: whitesmoke;
-}
-
-
-#top-icon{
-  font-size: 1.0vw;
-  color: whitesmoke;
-  margin-left: 10.5vw;
-}
-
-
-.delete-form {
-  display: inline;
-} */
 
 
 /* Custom Radio Buttons, input for forms.. */
