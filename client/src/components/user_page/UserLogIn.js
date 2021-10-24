@@ -36,10 +36,10 @@ import React, {useState} from "react";
         return(
             <>
             <div className="user-login">
-                <form className="form-inputs" onSubmit={handleSubmit}>
-                    <input type="text" id="name" placeholder="Enter Username.." value={username} onChange={handleNameChange} required/>
-                    <input type="text" id="password" placeholder="Password.." value={password} onChange={handlePasswordChange} required/>
-                    <button className="button-submit"><input type="submit" value="Submit" /></button>
+                <form className="form-container" onSubmit={handleSubmit}>
+                    <input className="form-inputs" type="text" id="name" placeholder="Enter Username.." value={username} onChange={handleNameChange} required/>
+                    <input className="form-inputs" type="text" id="password" placeholder="Password.." value={password} onChange={handlePasswordChange} required/>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
             </>

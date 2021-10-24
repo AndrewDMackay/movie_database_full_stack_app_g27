@@ -17,7 +17,7 @@ body {
   margin: 0;
 
   background-color: #000000; 
-  /* background: url('/static/images/<?>.jpg');
+  /* background: url('../static/images/alan-diaz-noCHrfxYic0-unsplash.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; */
 }
@@ -84,7 +84,7 @@ body {
   padding: 0.5vw; 
   min-width: 23.0vw;
   min-height: 35.0vw;
-  /* line-height: 1.0vw; */
+  line-height: 0.5vw;
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
@@ -124,32 +124,51 @@ body {
 h1 {
   font-weight: bolder;
   font-size: 4.0vw;
-  text-transform: 'uppercase';
   text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+
 }
 
 
 h2 {
   font-weight: bold;
   font-size: 3.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h3 {
   font-weight: bold;
   font-size: 2.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h4 {
   font-weight: bold;
   font-size: 1.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h5 {
   font-weight: bold;
   font-size: 1.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
@@ -202,10 +221,11 @@ a:active {
 } */
 
 
-/* Standard forms, buttons, inputs etc.. */
+/* Buttons, inputs etc.. */
 
-.custom-button {
+.custom-button, input[type=submit] {
   white-space: nowrap;
+  overflow:'hidden';
   text-decoration: none;
   display: inline-block;
 
@@ -214,7 +234,7 @@ a:active {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
  
-  padding: 0.5vw;
+  padding: 0.75vw;
   margin: 0.5vw;
 
   border: 0.1vw solid #F8F8FF;
@@ -226,7 +246,33 @@ a:active {
 }
 
 
-.form-inputs {
+.new-user-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 1.0vw;
+  min-height: 10.0vw;
+  min-width: 15.0vw;
+
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+.form-container {
+  margin: 1.0vw;
+  padding: 1.0vw;
+}
+
+
+.form-inputs, select {
   font-size: 0.8vw;
   font-family: 'Oswald', sans-serif;
   color: #262625;
@@ -235,20 +281,17 @@ a:active {
   padding: 0.5vw;
   margin: 0.5vw;
 
-  /* border: 0.1vw solid #F8F8FF; */
-  /* box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
-
   box-sizing: border-box;
   outline: none;
 }
 
 
-input:focus{
+.form-inputs:focus{
   outline: none;     
 }
 
 
-/* Icons, and buttons with images.. */
+/* Icons, and buttons replaced with images.. */
 
 /* .image-button {
   display: contents;
