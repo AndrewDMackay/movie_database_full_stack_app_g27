@@ -5,6 +5,7 @@ import MovieList from "../components/main_movie_page/MovieList"
 import MovieDetail from '../components/movie_detail/MovieDetail'
 import SearchBar from '../components/main_movie_page/SearchBar'
 
+
 const MovieContainer = () => {
     const [movies, setMovies] = useState([])
     const [selectedMovie, setSelectedMovie] = useState(null)

@@ -10,11 +10,13 @@ font-family: 'Roboto Condensed', sans-serif; */
 /* Main body.. */
 
 body {
-  margin: 0;
   font-family: 'Oswald', sans-serif;
-  background-color: #000000; 
-  color: #FDFDFF; 
   font-size: 0.8vw;
+  color: #FDFDFF; 
+
+  margin: 0;
+
+  background-color: #000000; 
   /* background: url('/static/images/<?>.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; */
@@ -34,14 +36,18 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-left: 5.0vw;
-  margin-right: 5.0vw;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
   margin-top: 0;
   padding: 1.0vw;
+
   border: 0.1vw solid #B2B2B2;
+  background-color: #090909
 }
 
 
@@ -50,29 +56,50 @@ body {
 .movie-list-container {
   display: flex;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
+
   margin: 5.0vw;
   padding: 0.5vw;
   min-height: 50.0vw;
-  min-width: 80.0vw;
-  background-color: #0E0E0E;
-  border: 0.1vw solid #B2B2B2;
+  min-width: 76.0vw;
+
+  background-color: #090909;
+  /* border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
 }
 
 
 /*  Movie List Items.. */
 
 .movie-list-item {
-  border: 0.1vw solid #F8F8FF;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
   margin: 0.5vw;
-  padding: 1.0vw; 
-  min-width: 23.2vw;
-  min-height: 22.0vw;
-  box-shadow: 0.1vw 0.1vw 0.1vw #F8F8FF;
+  padding: 0.5vw; 
+  min-width: 23.0vw;
+  min-height: 35.0vw;
   /* line-height: 1.0vw; */
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
+
+
+/*  Images, List Item posters/ */
+
+  .list-item-poster {
+    margin-top: 1.0vw;
+    height: 25.0vw;
+    width: auto;
+    border: 0.1vw solid #F8F8FF;
+    box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  }
 
 
 /* Headings.. */
@@ -154,13 +181,18 @@ a:active {
 
 /* Standard forms, buttons, inputs etc.. */
 
-.buttons {
+button {
   font-size: 0.8vw;
   color: white;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+ 
   padding: 0.5vw;
   margin: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  background-color: #090909
 }
 
 .button-submit {
@@ -179,11 +211,13 @@ a:active {
 input, select {
   font-size: 0.8vw;
   font-family: 'Oswald', sans-serif;
+  color: #262625;
   text-transform: uppercase;
+
   padding: 0.5vw;
   margin: 0.5vw;
+
   box-sizing: border-box;
-  color: #262625;
   border: none;
   outline: none;
 }
