@@ -1,6 +1,7 @@
 
 import React from "react";
 
+
     const UserDisplayItem = ({user, onUserClick, onUserDelete}) => {
 
         const handleDelete = () => {
@@ -19,6 +20,7 @@ import React from "react";
         <button onClick={handleDelete}>DELETE</button>
         </>
         )}
+
 
 export default UserDisplayItem;
 

@@ -1,4 +1,6 @@
+
 import React from "react";
+
 
 const SearchBar = ({ onTitleSearched }) => {
 
@@ -25,4 +27,6 @@ const SearchBar = ({ onTitleSearched }) => {
     )
 }
 
+
 export default SearchBar
+
