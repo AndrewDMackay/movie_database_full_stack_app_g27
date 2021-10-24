@@ -17,9 +17,10 @@ body {
   margin: 0;
 
   background-color: #000000; 
-  /* background: url('../static/images/alan-diaz-noCHrfxYic0-unsplash.jpg');
+  background: url('../static/images/alan_diaz_unsplash_background_1.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
+  background-size: 100vw;
 }
 
 
@@ -116,7 +117,7 @@ body {
     width: auto;
     border: 0.1vw solid #F8F8FF;
     box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
-  }
+}
 
 
 /* Headings.. */
@@ -185,7 +186,7 @@ h5 {
 
   margin-left: 10.0vw;
   margin-right: 10.0vw;
-  margin-top: 2.5vw;
+  margin-top: 1.0vw;
   padding: 1.0vw;
 
   border: 0.1vw solid #B2B2B2;
