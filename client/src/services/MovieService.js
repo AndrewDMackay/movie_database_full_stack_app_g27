@@ -1,3 +1,4 @@
+
 const baseURL = 'http://localhost:5000/api/users/'
 
 export const getUsers = () => {
@@ -59,3 +60,4 @@ export const updateUser = (payload, id) => {
 //     })
 //     .then(res => res.json())
 // }
+

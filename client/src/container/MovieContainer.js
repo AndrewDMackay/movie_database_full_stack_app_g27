@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
+
 import MovieList from "../components/main_movie_page/MovieList"
 import MovieDetail from '../components/movie_detail/MovieDetail'
 
@@ -35,9 +36,11 @@ const MovieContainer = () => {
 
     return (
         <>
-            <h1>This is the MovieContainer</h1>
-            {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-            {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} /> : null}
+            <div className="movie-container">
+                <h1>THIS IS THE MOVIE CONTAINER</h1>
+                {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
+                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} /> : null}
+            </div>
         </>
     )
 }

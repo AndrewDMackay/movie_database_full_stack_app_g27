@@ -1,5 +1,8 @@
+
 import React from 'react';
+
 import MovieListItem from "./MovieListItem"
+
 
 const MovieList = ({ movies, onMovieClick }) => {
 
@@ -8,10 +11,11 @@ const MovieList = ({ movies, onMovieClick }) => {
     })
 
     return (
-        <div className="flexbox">
+        <div className="movie-list-container">
             {moviesNodes}
         </div>
     )
 }
 
 export default MovieList;
+

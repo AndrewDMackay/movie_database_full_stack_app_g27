@@ -8,7 +8,7 @@ import UserDisplayItem from './UserDisplayItem'
         })
         return(
             <>
-            <h1>All Users:</h1>
+            <h2>ALL USERS</h2>
             {gridNodes}
             </>
 

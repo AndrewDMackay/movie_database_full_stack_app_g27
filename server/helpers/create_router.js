@@ -6,7 +6,9 @@ const createRouter = function (collection) {
 
     const router = express.Router();
 
-    // INDEX - Get all users from MongoDB and serve as JSON
+
+    // INDEX - Get all users from MongoDB and serve as JSON..
+
     router.get('/', (req, res) => {
         collection.find().toArray()
             .then((docs) => { res.json(docs) })
@@ -17,7 +19,9 @@ const createRouter = function (collection) {
             })
     })
 
-    // SHOW - Get one user back from its ID and serve as JSON
+
+    // SHOW - Get one user back from its ID and serve as JSON..
+
     router.get('/:id', (req, res) => {
         const id = req.params.id
         collection.findOne({ _id: ObjectID(id) })
@@ -29,7 +33,9 @@ const createRouter = function (collection) {
             })
     })
 
-    // CREATE - Post new user and persist to the database
+
+    // CREATE - Post new user and persist to the database..
+
     router.post('/', (req, res) => {
         const newData = req.body
         collection.insertOne(newData)
@@ -41,7 +47,9 @@ const createRouter = function (collection) {
             })
     })
 
-    // DESTROY - Delete a user by its ID
+
+    // DESTROY - Delete a user by its ID..
+
     router.delete('/:id', (req, res) => {
         const id = req.params.id
         collection.deleteOne({ _id: ObjectID(id) })
@@ -53,7 +61,8 @@ const createRouter = function (collection) {
             })
     })
 
-    // UPDATE - Update a user that already exisits
+    
+    // UPDATE - Update a user that already exisits..
     router.put('/:id', (req, res) => {
         const id = req.params.id
         const updatedData = req.body

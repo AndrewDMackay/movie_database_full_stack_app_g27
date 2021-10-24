@@ -16,7 +16,7 @@ import React from "react";
         <p onClick={handleClick}>{user.name}</p>
         <p>{user.email}</p>
         <p>{user.password}</p>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete}>DELETE</button>
         </>
         )}
 

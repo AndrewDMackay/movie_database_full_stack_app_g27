@@ -1,38 +1,266 @@
-.App {
-  text-align: center;
+
+/* Font-family commands below, for imported Google Fonts.. */
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+
+/* Main body.. */
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: #090909; 
+  color: #FDFDFF; 
+  font-size: 0.8vw;
+  /* background: url('/static/images/<?>.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Main app div.. */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .app {
+
+} */
+
+
+/*  Movie Container.. */
+
+.movie-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 5.0vw;
+  margin-right: 5.0vw;
+  margin-top: 0;
+  padding: 1.0vw;
+  border: 0.1vw solid #B2B2B2;
+}
+
+
+/*  Movie List Container.. */
+
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 5.0vw;
+  padding: 0.5vw;
+  min-height: 50.0vw;
+  min-width: 80.0vw;
+  background-color: #0E0E0E;
+  border: 0.1vw solid #B2B2B2;
+}
+
+
+/*  Movie List Items.. */
+
+.movie-list-item {
+  border: 0.1vw solid #FDFDFF;
+  margin: 0.5vw;
+  padding: 1.0vw; 
+  min-width: 23.2vw;
+  min-height: 22.0vw;
+  box-shadow: 0.1vw 0.1vw 0.1vw #F8F8FF;
+  /* line-height: 1.0vw; */
+}
+
+
+/* Headings.. */
+
+h1 {
+  font-weight: bolder;
+  font-size: 4.0vw;
+  text-transform: 'uppercase';
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 3.0vw;
+}
+
+
+h3 {
+  font-weight: bold;
+  font-size: 2.0vw;
+}
+
+
+h4 {
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+
+h5 {
+  font-weight: bold;
+  font-size: 1.0vw;
+}
+
+
+/*  User Container.. */
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 5.0vw;
+  padding: 1.0vw;
+  border: 0.1vw solid #B2B2B2;
+}
+
+
+/* Links.. */
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  cursor: pointer;
+}
+
+/* a:link { 
+
+}
+
+
+a:visited { 
+
+}
+
+
+a:hover { 
+
+}
+
+
+a:active { 
+  
+} */
+
+
+/* Standard forms, buttons, inputs etc.. */
+
+.buttons {
+  font-size: 0.8vw;
   color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 0.5vw;
+  margin: 0.5vw;
 }
 
-.App-link {
-  color: #61dafb;
+.button-submit {
+  font-size: 0.8vw;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #0E0E0E;;
+  border: none;
+  outline: none;
+  margin: 0.0vw;
+  padding: 0.0vw;
+  border: 0.1vw solid #B2B2B2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input, select {
+  font-size: 0.8vw;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  box-sizing: border-box;
+  color: #262625;
+  border: none;
+  outline: none;
 }
+
+
+input:focus{
+  outline: none;     
+}
+
+
+/* Icons, and buttons with images.. */
+
+/* .image-button {
+  display: contents;
+  cursor: pointer;
+  font-size: 0.8vw;
+  color: whitesmoke;
+}
+
+
+.float-button {
+  display: contents;
+  cursor: pointer;
+  font-size: 0.8vw;
+}
+
+
+#icon {
+  font-size: 0.8vw;
+  color: whitesmoke;
+}
+
+
+#top-icon{
+  font-size: 1.0vw;
+  color: whitesmoke;
+  margin-left: 10.5vw;
+}
+
+
+.delete-form {
+  display: inline;
+} */
+
+
+/* Custom Radio Buttons, input for forms.. */
+
+/* input[type="radio"] {
+visibility: hidden;
+}
+
+
+.radio-button input[type="radio"]:after {
+width: 1vw;
+height: 1.0vw;
+border-radius: 1.0vw;
+top: -0.5vw;
+left: -0.5vw;
+position: relative;
+background-color: #1E1E1E;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 0.1vw solid white;
+}
+
+.radio-button input[type="radio"]:checked:after {
+width: 1.0vw;
+height: 1.0vw;
+border-radius: 1.0vw;
+top: -0.5vw;
+left: -0.5vw;
+position: relative;
+background-color: #B2B2B2;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 0.1vw solid white;
+}
+ */
