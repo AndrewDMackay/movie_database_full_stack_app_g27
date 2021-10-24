@@ -1,6 +1,8 @@
 
 import React from 'react';
 
+import { FaPoop } from "react-icons/fa";
+
 
 const MovieDetail = ({ selectedMovie, onHomeClick }) => {
 
@@ -13,6 +15,7 @@ const MovieDetail = ({ selectedMovie, onHomeClick }) => {
         
         <div className="movie-detail-container">
             <div className="movie-detail">
+                <div className="movie-detail-icon"><FaPoop /></div>
                 <h2>{selectedMovie.Title}</h2>
                 <img className="movie-detail-poster" src={selectedMovie.Poster} alt=""/>
                 <div>

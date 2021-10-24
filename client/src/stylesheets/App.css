@@ -112,8 +112,8 @@ body {
   justify-content: center;
   text-align: center;
 
-  margin: 0.5vw;
-  padding: 0.5vw; 
+  margin: 1.0vw;
+  padding: 1.5vw; 
   min-width: 45.0vw;
   min-height: 55.0vw;
   line-height: 1.0vw;
@@ -126,17 +126,19 @@ body {
 /*  Images, List Item posters/ */
 
 .list-item-poster {
-    margin-top: 1.0vw;
+    margin: 1.0vw;
     height: 25.0vw;
     width: auto;
+
     border: 0.1vw solid #F8F8FF;
     box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
 
 .movie-detail-poster {
-  margin-top: 1.0vw;
+  margin: 1.0vw;
   height: 35.0vw;
   width: auto;
+
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
@@ -316,9 +318,30 @@ a:active {
 
 /* Icons, and buttons replaced with images.. */
 
-.movie-detail-icon {
-  font-size: 0.8vw;
+.logo-icon{
+  font-size: 3.0vw;
   color: #FFFFFF;
+
+  /* margin: 1.0vw;
+  padding: 0.5vw; */
+}
+
+
+.movie-detail-icon {
+  font-size: 1.5vw;
+  color: #FFFFFF;
+
+  margin: 1.0vw;
+  padding: 0.5vw;
+}
+
+
+.movie-list-item-icon {
+  font-size: 0.5vw;
+  color: #FFFFFF;
+
+  /* margin: 0.5vw;
+  padding: 0.5vw; */
 }
 
 
