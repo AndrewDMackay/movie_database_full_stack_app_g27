@@ -14,10 +14,12 @@ import React from "react";
 
         return(
         <>
-        <p onClick={handleClick}>{user.name}</p>
-        <p>{user.email}</p>
-        <p>{user.password}</p>
-        <button onClick={handleDelete}>DELETE</button>
+        <div className="user-display-item">
+            <p onClick={handleClick}>{user.name}</p>
+            <p>{user.email}</p>
+            <p>{user.password}</p>
+            <button onClick={handleDelete}>DELETE</button>
+        </div>
         </>
         )}
 

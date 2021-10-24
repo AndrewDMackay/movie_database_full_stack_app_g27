@@ -6,7 +6,7 @@ const MovieDetail = ({ selectedMovie }) => {
 
     return (
 
-        <div>
+        <div className="movie-detail">
             <h2>{selectedMovie.Title}</h2>
             <img src={selectedMovie.Poster} alt=""/>
             <div>

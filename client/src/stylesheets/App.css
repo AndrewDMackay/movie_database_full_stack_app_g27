@@ -91,6 +91,23 @@ body {
 }
 
 
+.movie-detail {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0.5vw;
+  padding: 0.5vw; 
+  min-width: 23.0vw;
+  min-height: 35.0vw;
+  /* line-height: 1.0vw; */
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
 /*  Images, List Item posters/ */
 
   .list-item-poster {
@@ -142,12 +159,18 @@ h5 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin: 5.0vw;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 2.5vw;
   padding: 1.0vw;
+
   border: 0.1vw solid #B2B2B2;
+  background-color: #090909
 }
 
 
@@ -181,7 +204,11 @@ a:active {
 
 /* Standard forms, buttons, inputs etc.. */
 
-button {
+.custom-button {
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+
   font-size: 0.8vw;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -192,23 +219,14 @@ button {
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
-  background-color: #090909
-}
+  background-color: #090909;
 
-.button-submit {
-  font-size: 0.8vw;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  color: #0E0E0E;;
-  border: none;
   outline: none;
-  margin: 0.0vw;
-  padding: 0.0vw;
-  border: 0.1vw solid #B2B2B2;
+  cursor: pointer;
 }
 
 
-input, select {
+.form-inputs {
   font-size: 0.8vw;
   font-family: 'Oswald', sans-serif;
   color: #262625;
@@ -217,8 +235,10 @@ input, select {
   padding: 0.5vw;
   margin: 0.5vw;
 
+  /* border: 0.1vw solid #F8F8FF; */
+  /* box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
+
   box-sizing: border-box;
-  border: none;
   outline: none;
 }
 

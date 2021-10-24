@@ -36,9 +36,9 @@ import React, {useState} from "react";
         return(
             <>
             <div className="user-login">
-                <form onSubmit={handleSubmit}>
-                    <input type="text" id="name" placeholder="Enter Username" value={username} onChange={handleNameChange} required/>
-                    <input type="text" id="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
+                <form className="form-inputs" onSubmit={handleSubmit}>
+                    <input type="text" id="name" placeholder="Enter Username.." value={username} onChange={handleNameChange} required/>
+                    <input type="text" id="password" placeholder="Password.." value={password} onChange={handlePasswordChange} required/>
                     <button className="button-submit"><input type="submit" value="Submit" /></button>
                 </form>
             </div>

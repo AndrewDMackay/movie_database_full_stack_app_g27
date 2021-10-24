@@ -20,9 +20,9 @@ const SearchBar = ({ onTitleSearched }) => {
         <>  
             <div className="search-bar">
                 <h4>THIS IS THE SEARCH BAR..</h4>
-                <form>
+                <form className="form-inputs">
                     <input type="text" id="title" placeholder="Search by title..." onChange={handleChange} />
-                    <input type="submit" value="Search" onClick={handleSubmit} />
+                    <button className="custom-button"><input type="submit" value="Search" onClick={handleSubmit} /></button>
                 </form>
             </div>
         </>
