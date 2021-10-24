@@ -1,20 +1,19 @@
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import MovieList from "../components/main_movie_page/MovieList"
 import MovieDetail from '../components/movie_detail/MovieDetail'
+import SearchBar from '../components/main_movie_page/SearchBar'
 
 const MovieContainer = () => {
     const [movies, setMovies] = useState([])
     const [selectedMovie, setSelectedMovie] = useState(null)
 
-    useEffect(() => {
-        getMoviesByTitle();
-    });
-
     // searches API by movie title (hardcoded for batman for example)
-    const getMoviesByTitle = function () {
-        fetch(`https://www.omdbapi.com/?s=batman&apikey=30f7090a`)
+    const onTitleSearched = function (title) {
+        setSelectedMovie(null)
+        setMovies([])
+        fetch(`https://www.omdbapi.com/?s=${title}&apikey=30f7090a`)
             .then(res => res.json())
             .then(data => setMovies(data.Search))
     }
@@ -32,12 +31,11 @@ const MovieContainer = () => {
     //     .then(movies => setMovies(movies))
     // }
 
-
-
     return (
         <>
             <div className="movie-container">
                 <h1>THIS IS THE MOVIE CONTAINER</h1>
+                <SearchBar onTitleSearched={onTitleSearched} />
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} /> : null}
             </div>
