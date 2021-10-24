@@ -30,7 +30,7 @@ export const updateUser = (payload, id) => {
     .then(res => res.json())
 }
 
-// below functions not needed. to add and remove reviews we should be updating the users attached since each user will be assigned reviews - KS.
+// Below functions not needed, to add and remove reviews we should be updating the users attached since each user will be assigned reviews - KS.
 
 // export const getUserReview = () => {
 //     return fetch(baseURL)
