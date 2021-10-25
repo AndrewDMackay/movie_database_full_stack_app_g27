@@ -5,7 +5,6 @@ import SearchBar from "./main_movie_page/SearchBar";
 
 
 const NavBar = ({ onTitleSearched }) => {
-    
     // const history = useHistory();
 
     // const goBack = () => {
@@ -14,7 +13,7 @@ const NavBar = ({ onTitleSearched }) => {
 
 
     return (
-            
+
         <>
         <div className="main-nav-bar">
             <ul>

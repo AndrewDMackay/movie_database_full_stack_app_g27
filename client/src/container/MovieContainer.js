@@ -17,11 +17,14 @@ const MovieContainer = () => {
 
     // searches API by movie title
     const onTitleSearched = function (title) {
-        // setSelectedMovie(null)
+        setSelectedMovie(null)
         setMovies([])
         fetch(`https://www.omdbapi.com/?s=${title}&apikey=30f7090a`)
             .then(res => res.json())
-            .then(data => setMovies(data.Search))
+            .then(data => {
+                const filteredMovies = data.Search.filter((movie) => movie.Type === "movie")
+                setMovies(filteredMovies)
+            })
     }
 
 
@@ -39,9 +42,9 @@ const MovieContainer = () => {
     //     .then(movies => setMovies(movies))
     // }
 
-    
 
-    const onHomeClick = function(){
+
+    const onHomeClick = function () {
         setSelectedMovie(null);
     }
 
