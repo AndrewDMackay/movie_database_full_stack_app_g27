@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 const SearchBar = ({ onTitleSearched }) => {
@@ -20,7 +19,6 @@ const SearchBar = ({ onTitleSearched }) => {
     return (
         <>  
             <div className="search-bar">
-                <h4>THIS IS THE SEARCH BAR..</h4>
                 <form className="form-container">
                     <input className="form-inputs" type="text" id="title" placeholder="Search by title..." onChange={handleChange} />
                     <input type="submit" value="Search" onClick={handleSubmit} />

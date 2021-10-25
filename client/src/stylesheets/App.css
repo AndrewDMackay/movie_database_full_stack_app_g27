@@ -326,6 +326,20 @@ a:active {
 }
 
 
+.nav-search-bar {
+  font-size: 0.8vw;
+  font-family: 'Oswald', sans-serif;
+  color: #262625;
+  text-transform: uppercase;
+
+  padding-bottom: 0.0vw;
+  margin: 0.0.vw;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+
 /* Icons, and buttons replaced with images.. */
 
 .logo-icon{
@@ -346,7 +360,7 @@ a:active {
 .movie-detail-icon {
   font-size: 1.5vw;
   color: #FFFFFF;
-
+  
   margin: 1.0vw;
   padding: 0.5vw;
 }

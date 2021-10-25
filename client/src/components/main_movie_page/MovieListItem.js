@@ -16,7 +16,7 @@ const MovieListItem = ({ movie, onMovieClick }) => {
   return (
     <div className="movie-list-item">
       <div onClick={handleClick}>
-        <div className="movie-detail-icon"><FaPoop /></div>
+        <div className="movie-list-item-icon"><FaPoop /></div>
         <img className="list-item-poster" src={movie.Poster} alt="" />
         <h4>{movie.Title}</h4>
         <h5>{movie.Year}</h5>

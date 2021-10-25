@@ -49,16 +49,16 @@ const MovieContainer = () => {
     return (
         <Router>
           <>
-
             <div className="main-nav-bar-container">
-                <NavBar />
+                <NavBar onTitleSearched={onTitleSearched}/>
             </div>
           </>
           <>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
                 <h1>THIS IS THE MOVIE CONTAINER</h1>
-                <SearchBar onTitleSearched={onTitleSearched} />
+                {!selectedMovie ?<h4>THIS IS THE SEARCH BAR..</h4> : null}
+                {!selectedMovie ?<SearchBar onTitleSearched={onTitleSearched} /> : null}
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
             </div>

@@ -1,9 +1,10 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import SearchBar from "./main_movie_page/SearchBar";
 
 
-const NavBar = () => {
+const NavBar = ({ onTitleSearched }) => {
     
     // const history = useHistory();
 
@@ -31,6 +32,9 @@ const NavBar = () => {
                 </li>
                 <li>
                     <Link to="/favourites">FAVOURITES</Link>
+                </li>
+                <li className="nav-search-bar">
+                <SearchBar onTitleSearched={onTitleSearched} />
                 </li>
             </ul>
         </div>
