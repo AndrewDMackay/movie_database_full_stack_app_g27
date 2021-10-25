@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import UserDisplay from '../components/user_page/UserDisplay'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
-import { getUsers, getUserByName, getUserbyPassword, deleteUser, postNewUser } from '../services/MovieService'
+import { getUsers, getUserByName, deleteUser, postNewUser } from '../services/MovieService'
 
 
 const UserContainer = () => {
@@ -32,7 +32,6 @@ const UserContainer = () => {
             setLoggedin(getUserByName(user.username))
         // }else{
             console.log(getUserByName(user.username))
-            console.log(getUserbyPassword(user.password))
             console.log(user);
             // setLoggedin("Incorrect Username or Password")
         // }
