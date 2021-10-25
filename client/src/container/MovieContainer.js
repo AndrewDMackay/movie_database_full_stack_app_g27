@@ -9,13 +9,13 @@ import SearchBar from '../components/main_movie_page/SearchBar'
 
 
 const MovieContainer = () => {
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState(null)
     const [selectedMovie, setSelectedMovie] = useState(null)
 
 
     // searches API by movie title (hardcoded for batman for example)
     const onTitleSearched = function (title) {
-        setSelectedMovie(null)
+        // setSelectedMovie(null)
         setMovies([])
         fetch(`https://www.omdbapi.com/?s=${title}&apikey=30f7090a`)
             .then(res => res.json())

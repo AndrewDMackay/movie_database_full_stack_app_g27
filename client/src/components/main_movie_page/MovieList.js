@@ -6,6 +6,8 @@ import MovieListItem from "./MovieListItem"
 
 const MovieList = ({ movies, onMovieClick }) => {
 
+    if(movies){
+
     const moviesNodes = movies.map((movie, index) => {
         return <MovieListItem movie={movie} key={index} onMovieClick={onMovieClick} />
     })
@@ -15,6 +17,12 @@ const MovieList = ({ movies, onMovieClick }) => {
             {moviesNodes}
         </div>
     )
+    
+    } else {
+        return(
+            <h5>PLEASE ENTER A VALID SEARCH TERM..</h5>
+        )
+    }
 }
 
 export default MovieList;
