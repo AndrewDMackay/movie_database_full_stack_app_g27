@@ -326,22 +326,6 @@ a:active {
 }
 
 
-.nav-search-bar {
-  float: right;
-
-  font-size: 0.8vw;
-  font-family: 'Oswald', sans-serif;
-  color: #262625;
-  text-transform: uppercase;
-
-  padding: 0.0vw;
-  margin: 0.0.vw;
-
-  box-sizing: border-box;
-  outline: none;
-}
-
-
 /* Icons, and buttons replaced with images.. */
 
 .logo-icon{
@@ -352,10 +336,10 @@ a:active {
   border-radius: 50.0vw;
   box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
 
-  padding-left: 0.85vw;
-  padding-right: 0.85vw;
-  padding-top: 0.05vw;
-  padding-bottom: 0.15vw;
+  padding-left: 0.9vw;
+  padding-right: 0.9vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.2vw;
 }
 
 
@@ -440,11 +424,11 @@ a:active {
 .main-nav-bar-container {
   float: left;
   display: inline;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   margin: 0.0vw;
   min-width: 99.75vw;
-  height: 5.0vw;
+  /* height: 5.0vw; */
 
   background-color: #000000;
   border: 0.1vw solid #B2B2B2;
@@ -459,7 +443,7 @@ a:active {
 
 
 .main-nav-bar ul {
-  margin: 0.5vw;
+  margin: 0.0vw;
   padding: 0.5vw;
 
   list-style-type: none; 
@@ -468,10 +452,43 @@ a:active {
   justify-content: space-evenly;
   }
 
+
 .main-nav-bar li {
   float: left;
   padding: 0.5vw;
   padding-left: 1.5vw;
+}
+
+
+/* Main Container search bar.. */
+
+.main-container-search-bar {
+  margin: 1.0vw;
+  padding: 1.0vw;
+}
+
+
+/* Nav Bar integrated search bar.. */
+
+
+.search-bar-form {
+  float: right;
+  margin: 0.0vw;
+  padding-bottom: 0.0vw;
+}
+
+
+.nav-search-bar {
+  font-size: 0.8vw;
+  font-family: 'Oswald', sans-serif;
+  color: #262625;
+  text-transform: uppercase;
+
+  padding: 0.0vw;
+  margin: 0.0vw;
+
+  box-sizing: border-box;
+  outline: none;
 }
 
 
