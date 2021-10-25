@@ -1,38 +1,403 @@
-.App {
-  text-align: center;
+
+/* NOTE.. This is one huge file at present, I will divide up, and import to the necessary files later.. */
+
+
+/* Font-family commands below, for imported Google Fonts.. */
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+
+/* Main body.. */
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.0vw;
+  color: #FDFDFF; 
+
+  margin: 0;
+
+  background-color: #000000; 
+  background: url('../static/images/alan_diaz_unsplash_background_1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Main app div.. */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .app {
+
+} */
+
+
+/*  Movie Container.. */
+
+.movie-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 0;
+  padding: 5.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
+/*  Movie List Container.. */
+
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 0.5vw;
+  min-height: 50.0vw;
+  min-width: 76.0vw;
+
+  background-color: #090909;
+  /* border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
+}
+
+
+/*  Movie List Items.. */
+
+.movie-list-item {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0.5vw;
+  padding: 0.5vw; 
+  min-width: 23.0vw;
+  min-height: 35.0vw;
+  line-height: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+.movie-detail-container {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1.0vw;
+  padding: 1.0vw; 
+}
+
+
+.movie-detail {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1.0vw;
+  padding: 1.5vw; 
+  min-width: 45.0vw;
+  min-height: 55.0vw;
+  line-height: 1.0vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+/*  Images, List Item posters/ */
+
+.list-item-poster {
+    margin: 1.0vw;
+    height: 25.0vw;
+    width: auto;
+
+    border: 0.1vw solid #F8F8FF;
+    box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+.movie-detail-poster {
+  margin: 1.0vw;
+  height: 35.0vw;
+  width: auto;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+/* Headings.. */
+
+h1 {
+  font-weight: bolder;
+  font-size: 4.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 3.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
+h3 {
+  font-weight: bold;
+  font-size: 2.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
+h4 {
+  font-weight: bold;
+  font-size: 2.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
+h5 {
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
+/*  User Container.. */
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 1.0vw;
+  padding: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
+/* Links.. */
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  cursor: pointer;
+}
+
+/* a:link { 
+
+}
+
+
+a:visited { 
+
+}
+
+
+a:hover { 
+
+}
+
+
+a:active { 
+  
+} */
+
+
+/* Buttons, inputs etc.. */
+
+.custom-button, input[type=submit] {
+  white-space: nowrap;
+  overflow:'hidden';
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 0.8vw;
   color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+ 
+  padding: 0.75vw;
+  margin: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  background-color: #090909;
+
+  outline: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.new-user-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 1.0vw;
+  min-height: 10.0vw;
+  min-width: 15.0vw;
+
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.form-container {
+  margin: 1.0vw;
+  padding: 1.0vw;
 }
+
+
+.form-inputs, select {
+  font-size: 0.8vw;
+  font-family: 'Oswald', sans-serif;
+  color: #262625;
+  text-transform: uppercase;
+
+  padding: 0.5vw;
+  margin: 0.5vw;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+.form-inputs:focus{
+  outline: none;     
+}
+
+
+/* Icons, and buttons replaced with images.. */
+
+.logo-icon{
+  font-size: 3.0vw;
+  color: #FFFFFF;
+
+  /* margin: 1.0vw;
+  padding: 0.5vw; */
+}
+
+
+.movie-detail-icon {
+  font-size: 1.5vw;
+  color: #FFFFFF;
+
+  margin: 1.0vw;
+  padding: 0.5vw;
+}
+
+
+.movie-list-item-icon {
+  font-size: 0.5vw;
+  color: #FFFFFF;
+
+  /* margin: 0.5vw;
+  padding: 0.5vw; */
+}
+
+
+/* .logo-icon {
+  font-size: 0.8vw;
+  color: #FFFFFF;
+} */
+
+
+/* .image-button {
+  display: contents;
+  cursor: pointer;
+  font-size: 0.8vw;
+  color: whitesmoke;
+}
+
+
+.float-button {
+  display: contents;
+  cursor: pointer;
+  font-size: 0.8vw;
+}
+
+
+/* Custom Radio Buttons, input for forms.. */
+
+/* input[type="radio"] {
+visibility: hidden;
+}
+
+
+.radio-button input[type="radio"]:after {
+width: 1vw;
+height: 1.0vw;
+border-radius: 1.0vw;
+top: -0.5vw;
+left: -0.5vw;
+position: relative;
+background-color: #1E1E1E;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 0.1vw solid white;
+}
+
+.radio-button input[type="radio"]:checked:after {
+width: 1.0vw;
+height: 1.0vw;
+border-radius: 1.0vw;
+top: -0.5vw;
+left: -0.5vw;
+position: relative;
+background-color: #B2B2B2;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 0.1vw solid white;
+}
+ */
