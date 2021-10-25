@@ -327,12 +327,14 @@ a:active {
 
 
 .nav-search-bar {
+  float: right;
+
   font-size: 0.8vw;
   font-family: 'Oswald', sans-serif;
   color: #262625;
   text-transform: uppercase;
 
-  padding-bottom: 0.0vw;
+  padding: 0.0vw;
   margin: 0.0.vw;
 
   box-sizing: border-box;

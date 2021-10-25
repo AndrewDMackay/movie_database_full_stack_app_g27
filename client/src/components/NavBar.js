@@ -33,9 +33,9 @@ const NavBar = ({ onTitleSearched }) => {
                 <li>
                     <Link to="/favourites">FAVOURITES</Link>
                 </li>
-                <li className="nav-search-bar">
+                <div className="nav-search-bar">
                 <SearchBar onTitleSearched={onTitleSearched} />
-                </li>
+                </div>
             </ul>
         </div>
         </>
