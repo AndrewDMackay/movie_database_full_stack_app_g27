@@ -1,13 +1,13 @@
 
-import React from "react";
+import React, { useState } from "react";
 
 
 const SearchBar = ({ onTitleSearched }) => {
 
-    let title = "";
+    const [title, setTitle] = useState("")
 
     const handleChange = function (event) {
-        title += event.nativeEvent.data;
+        setTitle(event.target.value)
     }
 
     const handleSubmit = function (event) {

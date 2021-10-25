@@ -196,6 +196,15 @@ h5 {
   padding: 0.5vw;
 }
 
+h6 {
+  font-weight: bold;
+  font-size: 1.25vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
 
 /*  User Container.. */
 

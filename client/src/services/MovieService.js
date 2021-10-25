@@ -31,6 +31,19 @@ export const updateUser = (payload, id) => {
     .then(res => res.json())
 }
 
+export const getUserByName = (username) => {
+    return fetch(baseURL + username, {
+        method: 'GET',
+    })
+    .then(res => res.json())
+}
+
+// export const getUserbyPassword = (password) => {
+//     return fetch(baseURL + password, {
+//         method: 'GET',
+//     })
+//     .then(res => res.json())
+// }
 // Below functions not needed, to add and remove reviews we should be updating the users attached since each user will be assigned reviews - KS.
 
 // export const getUserReview = () => {

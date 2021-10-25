@@ -1,4 +1,4 @@
-const reviewList => ({reviews}) {
+const reviewList = (({reviews}) => {
     return(
         <div id="review-list">
         <ul>
@@ -13,4 +13,4 @@ const reviewList => ({reviews}) {
         </div>
     )
 
-};
+});
