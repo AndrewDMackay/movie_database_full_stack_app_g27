@@ -14,19 +14,19 @@ const NavBar = () => {
     return (
         <ul>
             <li>
-                <link to="/"> Home </link>
+                <link to="/">HOME</link>
             </li>
             <li>
-                <link to="/genres">Movies by Genre</link>
+                <link to="/genres">MOVIES BY GENRE</link>
             </li>
             <li>
-                <link to="/year">Movies by Year</link>
+                <link to="/year">MOVIES BY YEAR</link>
             </li>
             <li>
-                <link to="/toprated">Top Rated Movies</link>
+                <link to="/toprated">TOP RATED MOVIES</link>
             </li>
             <li>
-                <link to="/favourites">Favourites</link>
+                <link to="/favourites">FAVOURITES</link>
             </li>
         </ul>
     )
