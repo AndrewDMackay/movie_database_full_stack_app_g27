@@ -4,7 +4,8 @@ db.dropDatabase();
 
 db.users.insertMany([
     {
-        name: "Test Name 1",
+        username: "Test Name 1",
+        password: "Test1",
         email: "test@email.com",
         review: [{
             movie: "Guardians of the Galaxy Vol. 2",
@@ -19,7 +20,8 @@ db.users.insertMany([
         ]
     },
     {
-        name: "Test Name 2",
+        username: "Test Name 2",
+        password: "Test2",
         email: "test_2@email.com",
         review: [{
             movie: "Anchorman",

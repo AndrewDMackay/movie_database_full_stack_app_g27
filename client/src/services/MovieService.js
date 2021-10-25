@@ -31,12 +31,10 @@ export const updateUser = (payload, id) => {
     .then(res => res.json())
 }
 
-export const getUserByName = (username) => {
-    return fetch(baseURL + username, {
-        method: 'GET',
-    })
-    .then(res => res.json())
-}
+// export const getUser = (id) => {
+//     return fetch(baseURL + id)
+//     .then(res => res.json())
+// }
 
 // export const getUserbyPassword = (password) => {
 //     return fetch(baseURL + password, {

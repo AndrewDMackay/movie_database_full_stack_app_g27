@@ -16,7 +16,7 @@ const MovieContainer = () => {
     const [selectedMovie, setSelectedMovie] = useState(null)
 
 
-    // searches API by movie title (hardcoded for batman for example)
+    // searches API by movie title
     const onTitleSearched = function (title) {
         // setSelectedMovie(null)
         setMovies([])
