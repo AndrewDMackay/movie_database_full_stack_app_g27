@@ -1,5 +1,6 @@
 
 import React, {useState} from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const UserLogin = ({onLoginSubmit}) => {
 
@@ -26,16 +27,18 @@ const UserLogin = ({onLoginSubmit}) => {
     }
 
     return(
-        <>
-        <h4>EXISTING USER</h4>
-        <div className="user-login">
-            <form onSubmit={handleSubmit}>
-                <input className="form-inputs" type="text" id="name" placeholder="Enter Username" value={username} onChange={handleNameChange} required/>
-                <input className="form-inputs" type="text" id="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
-                <input type="submit" value="Log in" />
-            </form>
-        </div>
-        </>
+        <Router>
+            <>
+            <h4>EXISTING USER</h4>
+            <div className="user-login">
+                <form onSubmit={handleSubmit}>
+                    <input className="form-inputs" type="text" id="name" placeholder="Enter Username" value={username} onChange={handleNameChange} required/>
+                    <input className="form-inputs" type="text" id="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
+                    <input type="submit" value="Log in" />
+                </form>
+            </div>
+            </>
+        </Router>
     )
 }
 

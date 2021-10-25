@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import UserDisplay from '../components/user_page/UserDisplay'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
@@ -49,14 +51,14 @@ const UserContainer = () => {
     }
 
     return (
-        <>
+          <>
             <div className="user-container">
                 <h1>THIS IS THE USER CONTAINER</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
                 <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} />
             </div>
-        </>
+          </>
     )
 }
 
