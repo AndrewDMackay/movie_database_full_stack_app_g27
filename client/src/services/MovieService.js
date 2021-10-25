@@ -1,6 +1,7 @@
 
 const baseURL = 'http://localhost:5000/api/users/'
 
+
 export const getUsers = () => {
     return fetch(baseURL)
         .then(res => res.json())

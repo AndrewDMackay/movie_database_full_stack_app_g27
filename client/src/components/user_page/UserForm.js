@@ -1,6 +1,7 @@
 
 import React, {useState} from "react";
 
+
     const UserForm = ({onNewUserSubmit}) => {
 
         const [name, setName] = useState("")
@@ -34,16 +35,19 @@ import React, {useState} from "react";
 
         return(
             <>
-            <h4>CREATE NEW USER</h4>
-            <form onSubmit={handleSubmit}>
-                <input type="text" id="name" placeholder="Enter Name" value={name} onChange={handleNameChange} required/>
-                <input type="text" id="email" placeholder="Enter Email" value={email} onChange={handleEmailChange} required/>
-                <input type="text" id="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
-                <button className="button-submit"><input type="submit" value="Submit" /></button>
-            </form>
+            <div className="new-user-form">
+                <h4>CREATE NEW USER</h4>
+                <form className="form-container" onSubmit={handleSubmit}>
+                    <input className="form-inputs" type="text" id="name" placeholder="Enter Name.." value={name} onChange={handleNameChange} required/>
+                    <input className="form-inputs" type="text" id="email" placeholder="Enter Email.." value={email} onChange={handleEmailChange} required/>
+                    <input className="form-inputs" type="text" id="password" placeholder="Password.." value={password} onChange={handlePasswordChange} required/>
+                    <input className="form-inputs" type="submit" value="Submit" />
+                </form>
+            </div>
             </>
         )
     }
 
 
 export default UserForm;
+

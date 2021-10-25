@@ -1,4 +1,7 @@
 
+/* NOTE.. This is one huge file at present, I will divide up, and import to the necessary files later.. */
+
+
 /* Font-family commands below, for imported Google Fonts.. */
 
 /* font-family: 'Amatic SC', cursive;
@@ -10,14 +13,17 @@ font-family: 'Roboto Condensed', sans-serif; */
 /* Main body.. */
 
 body {
-  margin: 0;
   font-family: 'Oswald', sans-serif;
-  background-color: #090909; 
+  font-size: 1.0vw;
   color: #FDFDFF; 
-  font-size: 0.8vw;
-  /* background: url('/static/images/<?>.jpg');
+
+  margin: 0;
+
+  background-color: #000000; 
+  background: url('../static/images/alan_diaz_unsplash_background_1.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
+  background-size: 100vw;
 }
 
 
@@ -34,14 +40,18 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-left: 5.0vw;
-  margin-right: 5.0vw;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
   margin-top: 0;
-  padding: 1.0vw;
+  padding: 5.0vw;
+
   border: 0.1vw solid #B2B2B2;
+  background-color: #090909
 }
 
 
@@ -50,28 +60,87 @@ body {
 .movie-list-container {
   display: flex;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
+
   margin: 5.0vw;
   padding: 0.5vw;
   min-height: 50.0vw;
-  min-width: 80.0vw;
-  background-color: #0E0E0E;
-  border: 0.1vw solid #B2B2B2;
+  min-width: 76.0vw;
+
+  background-color: #090909;
+  /* border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
 }
 
 
 /*  Movie List Items.. */
 
 .movie-list-item {
-  border: 0.1vw solid #FDFDFF;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
   margin: 0.5vw;
+  padding: 0.5vw; 
+  min-width: 23.0vw;
+  min-height: 35.0vw;
+  line-height: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+.movie-detail-container {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1.0vw;
   padding: 1.0vw; 
-  min-width: 23.2vw;
-  min-height: 22.0vw;
-  box-shadow: 0.1vw 0.1vw 0.1vw #F8F8FF;
-  /* line-height: 1.0vw; */
+}
+
+
+.movie-detail {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1.0vw;
+  padding: 1.5vw; 
+  min-width: 45.0vw;
+  min-height: 55.0vw;
+  line-height: 1.0vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+/*  Images, List Item posters/ */
+
+.list-item-poster {
+    margin: 1.0vw;
+    height: 25.0vw;
+    width: auto;
+
+    border: 0.1vw solid #F8F8FF;
+    box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+.movie-detail-poster {
+  margin: 1.0vw;
+  height: 35.0vw;
+  width: auto;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
 
 
@@ -80,32 +149,51 @@ body {
 h1 {
   font-weight: bolder;
   font-size: 4.0vw;
-  text-transform: 'uppercase';
   text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+
 }
 
 
 h2 {
   font-weight: bold;
   font-size: 3.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h3 {
   font-weight: bold;
-  font-size: 2.0vw;
+  font-size: 2.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h4 {
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2.0vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
 h5 {
   font-weight: bold;
-  font-size: 1.0vw;
+  font-size: 1.5vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #4E4E4E;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 
@@ -115,12 +203,18 @@ h5 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin: 5.0vw;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 1.0vw;
   padding: 1.0vw;
+
   border: 0.1vw solid #B2B2B2;
+  background-color: #090909
 }
 
 
@@ -152,49 +246,110 @@ a:active {
 } */
 
 
-/* Standard forms, buttons, inputs etc.. */
+/* Buttons, inputs etc.. */
 
-.buttons {
+.custom-button, input[type=submit] {
+  white-space: nowrap;
+  overflow:'hidden';
+  text-decoration: none;
+  display: inline-block;
+
   font-size: 0.8vw;
   color: white;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  padding: 0.5vw;
+ 
+  padding: 0.75vw;
   margin: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  background-color: #090909;
+
+  outline: none;
+  cursor: pointer;
 }
 
-.button-submit {
-  font-size: 0.8vw;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  color: #0E0E0E;;
-  border: none;
-  outline: none;
-  margin: 0.0vw;
-  padding: 0.0vw;
+
+.new-user-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 1.0vw;
+  min-height: 10.0vw;
+  min-width: 15.0vw;
+
+  background-color: #090909;
   border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 }
 
 
-input, select {
+.form-container {
+  margin: 1.0vw;
+  padding: 1.0vw;
+}
+
+
+.form-inputs, select {
   font-size: 0.8vw;
   font-family: 'Oswald', sans-serif;
+  color: #262625;
   text-transform: uppercase;
+
   padding: 0.5vw;
   margin: 0.5vw;
+
   box-sizing: border-box;
-  color: #262625;
-  border: none;
   outline: none;
 }
 
 
-input:focus{
+.form-inputs:focus{
   outline: none;     
 }
 
 
-/* Icons, and buttons with images.. */
+/* Icons, and buttons replaced with images.. */
+
+.logo-icon{
+  font-size: 3.0vw;
+  color: #FFFFFF;
+
+  /* margin: 1.0vw;
+  padding: 0.5vw; */
+}
+
+
+.movie-detail-icon {
+  font-size: 1.5vw;
+  color: #FFFFFF;
+
+  margin: 1.0vw;
+  padding: 0.5vw;
+}
+
+
+.movie-list-item-icon {
+  font-size: 0.5vw;
+  color: #FFFFFF;
+
+  /* margin: 0.5vw;
+  padding: 0.5vw; */
+}
+
+
+/* .logo-icon {
+  font-size: 0.8vw;
+  color: #FFFFFF;
+} */
+
 
 /* .image-button {
   display: contents;
@@ -209,24 +364,6 @@ input:focus{
   cursor: pointer;
   font-size: 0.8vw;
 }
-
-
-#icon {
-  font-size: 0.8vw;
-  color: whitesmoke;
-}
-
-
-#top-icon{
-  font-size: 1.0vw;
-  color: whitesmoke;
-  margin-left: 10.5vw;
-}
-
-
-.delete-form {
-  display: inline;
-} */
 
 
 /* Custom Radio Buttons, input for forms.. */
