@@ -6,7 +6,7 @@ import { FaPoop } from "react-icons/fa";
 
 import MovieList from "../components/main_movie_page/MovieList";
 import MovieDetail from '../components/movie_detail/MovieDetail';
-import SearchBar from '../components/main_movie_page/SearchBar';
+// import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
 
 
@@ -17,11 +17,14 @@ const MovieContainer = () => {
 
     // searches API by movie title
     const onTitleSearched = function (title) {
-        // setSelectedMovie(null)
+        setSelectedMovie(null)
         setMovies([])
         fetch(`https://www.omdbapi.com/?s=${title}&apikey=30f7090a`)
             .then(res => res.json())
-            .then(data => setMovies(data.Search))
+            .then(data => {
+                const filteredMovies = data.Search.filter((movie) => movie.Type === "movie")
+                setMovies(filteredMovies)
+            })
     }
 
 
@@ -39,30 +42,30 @@ const MovieContainer = () => {
     //     .then(movies => setMovies(movies))
     // }
 
-    
 
-    const onHomeClick = function(){
+
+    const onHomeClick = function () {
         setSelectedMovie(null);
     }
 
 
     return (
         <Router>
-          <>
-            <div className="main-nav-bar-container">
-                <NavBar onTitleSearched={onTitleSearched}/>
-            </div>
-          </>
-          <>
-            <div className="movie-container">
-                <div className="logo-icon"><FaPoop /></div>
-                <h1>THIS IS THE MOVIE CONTAINER</h1>
-                {!selectedMovie ?<h4>THIS IS THE SEARCH BAR..</h4> : null}
-                {!selectedMovie ?<SearchBar onTitleSearched={onTitleSearched} /> : null}
-                {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
-            </div>
-          </>
+            <>
+
+                <div className="main-nav-bar-container">
+                    <NavBar onTitleSearched={onTitleSearched} />
+                </div>
+            </>
+            <>
+                <div className="movie-container">
+                    <div className="logo-icon"><FaPoop /></div>
+                    <h1>THIS IS THE MOVIE CONTAINER</h1>
+                    {/* <SearchBar onTitleSearched={onTitleSearched} /> */}
+                    {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
+                    {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
+                </div>
+            </>
         </Router>
     )
 
