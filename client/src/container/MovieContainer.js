@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { FaPoop } from "react-icons/fa";
 
-import MovieList from "../components/main_movie_page/MovieList"
-import MovieDetail from '../components/movie_detail/MovieDetail'
-import SearchBar from '../components/main_movie_page/SearchBar'
+import MovieList from "../components/main_movie_page/MovieList";
+import MovieDetail from '../components/movie_detail/MovieDetail';
+import SearchBar from '../components/main_movie_page/SearchBar';
+import NavBar from '../components/NavBar';
 
 
 const MovieContainer = () => {
@@ -46,7 +47,13 @@ const MovieContainer = () => {
 
 
     return (
-        <>
+        <Router>
+          <>
+            <div className="main-nav-bar">
+                <NavBar />
+            </div>
+          </>
+          <>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
                 <h1>THIS IS THE MOVIE CONTAINER</h1>
@@ -54,7 +61,8 @@ const MovieContainer = () => {
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
             </div>
-        </>
+          </>
+        </Router>
     )
 }
 

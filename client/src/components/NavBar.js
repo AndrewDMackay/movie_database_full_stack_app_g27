@@ -4,31 +4,35 @@ import { Link, useHistory } from "react-router-dom";
 
 
 const NavBar = () => {
-    const history = useHistory();
+    
+    // const history = useHistory();
 
-    const goBack = () => {
-        history.goBack();
-    }
+    // const goBack = () => {
+    //     history.goBack();
+    // }
 
 
     return (
+            
+        <>
         <ul>
             <li>
-                <link to="/">HOME</link>
+                <Link to="/">HOME</Link>
             </li>
             <li>
-                <link to="/genres">MOVIES BY GENRE</link>
+                <Link to="/genres">MOVIES BY GENRE</Link>
             </li>
             <li>
-                <link to="/year">MOVIES BY YEAR</link>
+                <Link to="/year">MOVIES BY YEAR</Link>
             </li>
             <li>
-                <link to="/toprated">TOP RATED MOVIES</link>
+                <Link to="/toprated">TOP RATED MOVIES</Link>
             </li>
             <li>
-                <link to="/favourites">FAVOURITES</link>
+                <Link to="/favourites">FAVOURITES</Link>
             </li>
         </ul>
+        </>
     )
 };
 

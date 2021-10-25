@@ -34,7 +34,10 @@ const MovieList = ({ movies, onMovieClick }) => {
     
     } else {
         return(
-            <h6>[ NOTHING FOUND.. PLEASE ENTER A VALID SEARCH TERM.. ]</h6>
+            <div>
+                <h6>NOTHING FOUND..</h6>
+                <p>ENTER A VALID SEARCH TERM..</p>
+            </div>
         )
     }
 }
