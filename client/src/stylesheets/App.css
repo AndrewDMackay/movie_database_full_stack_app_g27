@@ -47,7 +47,7 @@ body {
 
   margin-left: 10.0vw;
   margin-right: 10.0vw;
-  margin-top: 0;
+  margin-top: 0.0vw;
   padding: 5.0vw;
 
   border: 0.1vw solid #B2B2B2;
@@ -422,8 +422,13 @@ a:active {
   flex-direction:row; */
   /* flex-wrap: wrap; */
 
-  display: inline-block;
+  float: left;
+  display: inline;
   overflow: hidden;
+
+  margin: 0.0vw;
+  min-width: 98.7vw;
+  height: fit-content;
 
   background-color: #090909;
   border: 0.1vw solid #B2B2B2;
@@ -444,6 +449,15 @@ a:active {
   list-style-type: none; 
   text-decoration: none;
   }
+
+.main-nav-bar li {
+  float: left;
+
+  margin: 1.0vw;
+  padding: 1.0vw;
+
+  text-align: cen;
+}
 
 
 /* .dropdown {
