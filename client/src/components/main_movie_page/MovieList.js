@@ -6,6 +6,17 @@ import MovieListItem from "./MovieListItem"
 
 const MovieList = ({ movies, onMovieClick }) => {
 
+    if(movies === null) {
+
+    // Prior to any search..
+
+    return(
+        ""
+    )
+    } else {
+
+    // Logic for post search, if objects are found..
+
     if(movies){
 
     const moviesNodes = movies.map((movie, index) => {
@@ -17,13 +28,17 @@ const MovieList = ({ movies, onMovieClick }) => {
             {moviesNodes}
         </div>
     )
+
+    // If objects are failed to be found..
     
     } else {
         return(
-            <h5>PLEASE ENTER A VALID SEARCH TERM..</h5>
+            <h6>[ NOTHING FOUND.. PLEASE ENTER A VALID SEARCH TERM.. ]</h6>
         )
     }
 }
+}
+
 
 export default MovieList;
 
