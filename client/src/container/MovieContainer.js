@@ -49,7 +49,8 @@ const MovieContainer = () => {
     return (
         <Router>
           <>
-            <div className="main-nav-bar">
+
+            <div className="main-nav-bar-container">
                 <NavBar />
             </div>
           </>

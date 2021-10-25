@@ -378,37 +378,37 @@ a:active {
 
 /* Custom Radio Buttons, input for forms.. */
 
-/* input[type="radio"] {
-visibility: hidden;
+  /* input[type="radio"] {
+  visibility: hidden;
 }
 
 
 .radio-button input[type="radio"]:after {
-width: 1vw;
-height: 1.0vw;
-border-radius: 1.0vw;
-top: -0.5vw;
-left: -0.5vw;
-position: relative;
-background-color: #1E1E1E;
-content: '';
-display: inline-block;
-visibility: visible;
-border: 0.1vw solid white;
-}
+  width: 1vw;
+  height: 1.0vw;
+  border-radius: 1.0vw;
+  top: -0.5vw;
+  left: -0.5vw;
+  position: relative;
+  background-color: #1E1E1E;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 0.1vw solid white;
+  }
 
-.radio-button input[type="radio"]:checked:after {
-width: 1.0vw;
-height: 1.0vw;
-border-radius: 1.0vw;
-top: -0.5vw;
-left: -0.5vw;
-position: relative;
-background-color: #B2B2B2;
-content: '';
-display: inline-block;
-visibility: visible;
-border: 0.1vw solid white;
+  .radio-button input[type="radio"]:checked:after {
+  width: 1.0vw;
+  height: 1.0vw;
+  border-radius: 1.0vw;
+  top: -0.5vw;
+  left: -0.5vw;
+  position: relative;
+  background-color: #B2B2B2;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 0.1vw solid white;
 }
  */
 
@@ -417,37 +417,33 @@ border: 0.1vw solid white;
 
 /* Central Nav Bar, potential to implement drop down menus.. */
 
-.main-nav-bar {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+.main-nav-bar-container {
+  /* display: flex;  
+  flex-direction:row; */
+  /* flex-wrap: wrap; */
 
-margin: 1.0vw;
-padding: 1.0vw;
-overflow: hidden;
+  display: inline-block;
+  overflow: hidden;
 
-font-size: 1.5vw;
-color: #FFFFFF;
-font-weight: bold;
-text-decoration: none;
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
 
-background-color: #090909;
-border: 0.1vw solid #B2B2B2;
-box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
-.main-nav-bar a {
-float: left;
+.main-nav-bar ul {
+  margin: 1.0vw;
+  padding: 1.0vw;
 
-font-size: 1.3vw;
-font-weight: bold;
-color: white;
-text-align: center;
-padding: 0.9vw 1vw;
-text-decoration: none;
-cursor: pointer;
-}
+  list-style-type: none; 
+  text-decoration: none;
+  }
 
 
 /* .dropdown {
