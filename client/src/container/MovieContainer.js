@@ -49,7 +49,7 @@ const MovieContainer = () => {
 
     return (
         <>
-        <div className="NavBar">
+        <div className="nav-bar">
             <NavBar/>
         </div>
             <div className="movie-container">
@@ -61,7 +61,7 @@ const MovieContainer = () => {
             </div>
         </>
     )
-    
+
 }
 
 export default MovieContainer;
