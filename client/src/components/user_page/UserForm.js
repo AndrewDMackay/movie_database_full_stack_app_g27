@@ -1,10 +1,6 @@
 
-<<<<<<< HEAD
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-=======
-import React, { useState } from "react";
->>>>>>> develop
 
 
 const UserForm = ({ onNewUserSubmit }) => {
