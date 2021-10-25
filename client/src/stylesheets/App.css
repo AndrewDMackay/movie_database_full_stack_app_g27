@@ -1,5 +1,5 @@
 
-/* NOTE.. This is one huge file at present, I will divide up, and import to the necessary files later.. */
+/* NOTE.. This is one huge file at present, I will divide up, and import to the necessary files later, if there's time.. */
 
 
 /* Font-family commands below, for imported Google Fonts.. */
@@ -34,7 +34,7 @@ body {
 } */
 
 
-/*  Movie Container.. */
+/*  Movie Container, flex, etc.. */
 
 .movie-container {
   display: flex;
@@ -55,7 +55,7 @@ body {
 }
 
 
-/*  Movie List Container.. */
+/*  Movie List Container, flex, etc.. */
 
 .movie-list-container {
   display: flex;
@@ -95,6 +95,8 @@ body {
 }
 
 
+/* Movie Detail Container, and Detail Item.. */
+
 .movie-detail-container {
   align-items: center;
   align-content: center;
@@ -123,7 +125,7 @@ body {
 }
 
 
-/*  Images, List Item posters/ */
+/*  Images, List Item, and Movie Detail posters/ */
 
 .list-item-poster {
     margin: 1.0vw;
@@ -207,7 +209,7 @@ h6 {
 }
 
 
-/*  User Container.. */
+/*  User Container, flex, etc.. */
 
 .user-container {
   display: flex;
@@ -228,7 +230,7 @@ h6 {
 }
 
 
-/* Links.. */
+/* Links, a, and React Router Links.. */
 
 a {
   text-decoration: none;
@@ -256,7 +258,7 @@ a:active {
 } */
 
 
-/* Buttons, inputs etc.. */
+/* Buttons, custom buttons, and submit inputs.. */
 
 .custom-button, input[type=submit] {
   white-space: nowrap;
@@ -280,6 +282,8 @@ a:active {
   cursor: pointer;
 }
 
+
+/* Forms, form containers, and form inputs.. */
 
 .new-user-form {
   display: flex;
@@ -326,7 +330,7 @@ a:active {
 }
 
 
-/* Icons, and buttons replaced with images.. */
+/* Logo, icons, and buttons replaced with icons, or images.. */
 
 .logo-icon{
   font-size: 3.0vw;
@@ -355,23 +359,14 @@ a:active {
 .movie-list-item-icon {
   font-size: 0.5vw;
   color: #FFFFFF;
-
-  /* margin: 0.5vw;
-  padding: 0.5vw; */
 }
-
-
-/* .logo-icon {
-  font-size: 0.8vw;
-  color: #FFFFFF;
-} */
 
 
 /* .image-button {
   display: contents;
   cursor: pointer;
   font-size: 0.8vw;
-  color: whitesmoke;
+  color: #FFFFFF;
 }
 
 
@@ -382,44 +377,7 @@ a:active {
 }
 
 
-/* Custom Radio Buttons, input for forms.. */
-
-  /* input[type="radio"] {
-  visibility: hidden;
-}
-
-
-.radio-button input[type="radio"]:after {
-  width: 1vw;
-  height: 1.0vw;
-  border-radius: 1.0vw;
-  top: -0.5vw;
-  left: -0.5vw;
-  position: relative;
-  background-color: #1E1E1E;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 0.1vw solid white;
-  }
-
-  .radio-button input[type="radio"]:checked:after {
-  width: 1.0vw;
-  height: 1.0vw;
-  border-radius: 1.0vw;
-  top: -0.5vw;
-  left: -0.5vw;
-  position: relative;
-  background-color: #B2B2B2;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 0.1vw solid white;
-}
- */
-
-
-/* Central Nav Bar, potential to implement drop down menus.. */
+/* Central Nav Bar, potential to implement drop down menus below.. */
 
 .main-nav-bar-container {
   float: left;
@@ -492,6 +450,8 @@ a:active {
 }
 
 
+/* CSS for dropdowns if implemented.. */
+
 /* .dropdown {
 float: left;
 overflow: hidden;
@@ -544,5 +504,41 @@ background-color:black;
 
 .dropdown:hover .dropdown-content {
 display: block;
+} */
+
+
+/* Custom Radio Buttons, input for forms.. */
+
+  /* input[type="radio"] {
+  visibility: hidden;
+}
+
+
+.radio-button input[type="radio"]:after {
+  width: 1vw;
+  height: 1.0vw;
+  border-radius: 1.0vw;
+  top: -0.5vw;
+  left: -0.5vw;
+  position: relative;
+  background-color: #1E1E1E;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 0.1vw solid white;
+  }
+
+  .radio-button input[type="radio"]:checked:after {
+  width: 1.0vw;
+  height: 1.0vw;
+  border-radius: 1.0vw;
+  top: -0.5vw;
+  left: -0.5vw;
+  position: relative;
+  background-color: #B2B2B2;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 0.1vw solid white;
 } */
 
