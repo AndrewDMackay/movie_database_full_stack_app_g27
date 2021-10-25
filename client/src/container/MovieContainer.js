@@ -6,6 +6,9 @@ import { FaPoop } from "react-icons/fa";
 import MovieList from "../components/main_movie_page/MovieList"
 import MovieDetail from '../components/movie_detail/MovieDetail'
 import SearchBar from '../components/main_movie_page/SearchBar'
+import NavBar from '../components/NavBar';
+
+
 
 
 const MovieContainer = () => {
@@ -46,6 +49,9 @@ const MovieContainer = () => {
 
     return (
         <>
+        <div className="NavBar">
+            <NavBar/>
+        </div>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
                 <h1>THIS IS THE MOVIE CONTAINER</h1>
@@ -55,6 +61,7 @@ const MovieContainer = () => {
             </div>
         </>
     )
+    
 }
 
 export default MovieContainer;
