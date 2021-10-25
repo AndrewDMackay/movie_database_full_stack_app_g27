@@ -27,7 +27,6 @@ const UserLogin = ({onLoginSubmit}) => {
     }
 
     return(
-        <Router>
             <>
             <h4>EXISTING USER</h4>
             <div className="user-login">
@@ -38,7 +37,6 @@ const UserLogin = ({onLoginSubmit}) => {
                 </form>
             </div>
             </>
-        </Router>
     )
 }
 
