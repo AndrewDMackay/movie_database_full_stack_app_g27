@@ -16,6 +16,11 @@ db.users.insertMany([
             movie: "One-Eyed Monster",
             comment: "Left a lot to be desired",
             score: 3
+        },
+        {
+            movie: "The Muppets' Wizard of Oz",
+            comment: "I enjoyed it but my dad found it a bit scary",
+            score: 3
         }
         ]
     },
@@ -40,7 +45,51 @@ db.users.insertMany([
 
         }
         ]
-    }
+    },
+
+    {
+        username: "CarlosTheCodeWizard",
+        password: "Test1",
+        email: "test@email.com",
+        review: [{
+            movie: "One-Eyed Monster",
+            comment: "great fun for all the family",
+            score: 5
+        },
+        {
+            movie: "Batman",
+            comment: "Pretty far fetched tbh",
+            score: 2
+        },
+        {
+            movie: "The Social Network",
+            comment: "Very inspiring, I truly believe that I could invent facebook",
+            score: 5
+        }
+        ]
+    },
+
+    {
+        username: "FrenchAnthony",
+        password: "Test1",
+        email: "test@email.com",
+        review: [{
+            movie: "Calendar Girls",
+            comment: "the british are such prudes",
+            score: 2
+        },
+        {
+            movie: "One-Eyed Monster",
+            comment: "LOVED IT",
+            score: 3
+        },
+        {
+            movie: "Trainspotting",
+            comment: "What is wrong with you people?!",
+            score: 1
+        }
+        ]
+    },
 
     
 ]);
