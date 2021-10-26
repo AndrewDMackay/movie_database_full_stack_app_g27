@@ -17,10 +17,10 @@ const NavBar = ({ onTitleSearched }) => {
                         <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/users">USER LOG IN</Link>
+                        <Link to="/users">USERS</Link>
                     </li>
                     <li>
-                        <Link to="/movies">SEARCH MOVIES</Link>
+                        <Link to="/movies">MOVIES</Link>
                     </li>
                     <div className="nav-search-bar">
                         <SearchBar onTitleSearched={onTitleSearched} />

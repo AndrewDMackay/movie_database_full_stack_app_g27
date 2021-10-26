@@ -254,6 +254,25 @@ h6 {
 }
 
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 1.0vw;
+  padding: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
 /* Links, a, and React Router Links.. */
 
 a {
@@ -290,7 +309,7 @@ a:active {
   text-decoration: none;
   display: inline-block;
 
-  font-size: 0.8vw;
+  font-size: 1.0vw;
   color: white;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -336,7 +355,7 @@ a:active {
 
 
 .form-inputs, select {
-  font-size: 0.8vw;
+  font-size: 1.0vw;
   font-family: 'Oswald', sans-serif;
   color: #262625;
   text-transform: uppercase;
@@ -389,7 +408,7 @@ a:active {
 /* .image-button {
   display: contents;
   cursor: pointer;
-  font-size: 0.8vw;
+  font-size: 1.0vw;
   color: #FFFFFF;
 }
 
@@ -397,7 +416,7 @@ a:active {
 .float-button {
   display: contents;
   cursor: pointer;
-  font-size: 0.8vw;
+  font-size: 1.0vw;
 }
 
 
@@ -410,13 +429,12 @@ a:active {
 
   margin: 0.0vw;
   min-width: 99.75vw;
-  /* height: 5.0vw; */
+  min-height: 5.0vw;
 
   background-color: #000000;
   border: 0.1vw solid #B2B2B2;
   box-shadow: 0.0vw 0.0vw 0.1vw #92A0AD;
 
-  font-size: 1.5vw;
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
@@ -436,6 +454,7 @@ a:active {
 
 
 .main-nav-bar li {
+  font-size: 2.0vw;
   float: left;
   padding: 0.5vw;
   padding-left: 1.5vw;
@@ -456,12 +475,12 @@ a:active {
 .search-bar-form {
   float: right;
   margin: 0.0vw;
-  padding-bottom: 0.0vw;
+  padding-right: 2.0vw;
 }
 
 
 .nav-search-bar {
-  font-size: 0.8vw;
+  font-size: 1.0vw;
   font-family: 'Oswald', sans-serif;
   color: #262625;
   text-transform: uppercase;
