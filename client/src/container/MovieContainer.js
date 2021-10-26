@@ -7,12 +7,12 @@ import MovieList from "../components/main_movie_page/MovieList";
 import MovieDetail from '../components/movie_detail/MovieDetail';
 import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
-import RecentReviewsList from '../components/main_movie_page/RecentReviewsList';
+
 
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
-
-import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieService'
+import { getUsers, getUser, deleteUser, postNewUser, updateUser } from '../services/MovieService'
+import MovieReviewForm from '../components/movie_detail/MovieReviewForm';
 
 
 const MovieContainer = () => {
@@ -21,7 +21,7 @@ const MovieContainer = () => {
     // From User Container.. 
     const [allUsers, setAllUsers] = useState([])
     const [loggedIn, setLoggedin] = useState(null)
-
+  
 
     // searches API by movie title
     const onTitleSearched = function (title) {
@@ -77,6 +77,11 @@ const MovieContainer = () => {
         })
     }
 
+    const onNewReviewSubmit = (review) => {
+        updateUser(review, loggedIn._id).then((data) => {
+        })
+    }
+
     const onUserDelete = (id) => {
         deleteUser(id).then((data) => {
             removeUser(data);
@@ -92,17 +97,10 @@ const MovieContainer = () => {
         setLoggedin(foundUser)
     }
 
-
-    // const getMoviesByGenre = function(genre){
-    //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
-    //     .then(res => res.json())
-    //     .then(movies => setMovies(movies))
-    // }
-
-
     const onHomeClick = function () {
         setSelectedMovie(null);
     }
+
 
     return (
         <>
@@ -111,22 +109,19 @@ const MovieContainer = () => {
             </div>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
-                <h1 className="logo-heading">BÖGGIN JÖBBIES</h1>
-                {!selectedMovie ? <h4>SEARCH MOVIES BY TITLE..</h4> : null}
+                <h1>THIS IS THE MOVIE CONTAINER</h1>
+                {!selectedMovie ? <h4>THIS IS THE SEARCH BAR..</h4> : null}
                 <div className="main-container-search-bar">
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
+                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers}/> : null}
+                {selectedMovie ? <MovieReviewForm selectedMovie={selectedMovie} onNewReviewSubmit={onNewReviewSubmit} loggedIn={loggedIn}/> : null}
             </div>
             <div className="user-container">
-                <RecentReviewsList allUsers={allUsers} />
-            </div>
-            <div className="user-container">
-                <h1>USERS</h1>
+                <h1>THIS IS THE USER CONTAINER</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
-                {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}
             </div>
         </>
     )
