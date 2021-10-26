@@ -4,36 +4,44 @@ db.dropDatabase();
 
 db.users.insertMany([
     {
-        username: "Test Name 1",
+        username: "NeilHanlon",
         password: "Test1",
         email: "test@email.com",
         review: [{
-            movie: "Guardians of the Galaxy Vol. 2",
-            comment: "test comment GotG2",
-            score: 3
+            movie: "Calendar Girls",
+            comment: "gr8 film, luved all the grannies",
+            score: 5
         },
         {
-            movie: "Batman",
-            comment: "test comment Batman",
-            score: 5
+            movie: "One-Eyed Monster",
+            comment: "Left a lot to be desired",
+            score: 3
         }
         ]
     },
     {
-        username: "Test Name 2",
+        username: "CodeClanStan",
         password: "Test2",
         email: "test_2@email.com",
         review: [{
-            movie: "Anchorman",
-            comment: "test comment Anchorman",
-            score: 4
+            movie: "Batman",
+            comment: "Very misleading title, more of a man in a bat costume than an actual Bat Man",
+            score: 3
         },
         {
-            movie: "Batman",
-            comment: "test comment 2 Batman",
-            score: 4
+            movie: "2 Fast 2 Furious",
+            comment: "Nowhere near as fast as advertised",
+            score: 3
+        },
+        {
+            movie: "One-Eyed Monster",
+            comment: "WORST MOVIE EVER",
+            score: 1
+
         }
         ]
     }
+
+    
 ]);
 
