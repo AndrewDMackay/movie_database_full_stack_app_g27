@@ -348,6 +348,46 @@ a:active {
 }
 
 
+.user-login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 1.0vw;
+  min-height: 10.0vw;
+  min-width: 15.0vw;
+
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+}
+
+
+.movie-review-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 1.0vw;
+  min-height: 10.0vw;
+  min-width: 15.0vw;
+
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+}
+
+
 .form-container {
   margin: 1.0vw;
   padding: 1.0vw;

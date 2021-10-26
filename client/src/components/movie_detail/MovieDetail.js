@@ -5,11 +5,7 @@ import MovieReviewList from './MovieReviewList';
 import { FaPoop } from "react-icons/fa";
 
 
-<<<<<<< HEAD
 const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers }) => {
-=======
-const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
->>>>>>> develop
 
 
     const handleClick = function () {
@@ -25,10 +21,6 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
             }
             return movie
         })}
-<<<<<<< HEAD
-=======
-
->>>>>>> develop
 
 
     return (
@@ -39,7 +31,7 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
                 <h2>{selectedMovie.Title}</h2>
                 <img className="movie-detail-poster" src={selectedMovie.Poster} alt="" />
                 <div>
-                    <p><u>{selectedMovie.Plot}</u></p>
+                    <p>{selectedMovie.Plot}</p>
                     <p>Director: {selectedMovie.Director}</p>
                     <p>Cast: {selectedMovie.Actors}</p>
                     <p>Runtime: {selectedMovie.Runtime}</p>
@@ -49,20 +41,12 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
-<<<<<<< HEAD
             <div className="movie-review-list-container">
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
             </div>
         </div>    
-=======
-        </div>
->>>>>>> develop
     )
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
 
 export default MovieDetail;
 
