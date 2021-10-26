@@ -94,7 +94,7 @@ const UserContainer = () => {
                 <NavBar onTitleSearched={onTitleSearched} />
             </div>
             <div className="user-container">
-                <h1>THIS IS THE USER CONTAINER</h1>
+                <h1>USERS</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
                 {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}

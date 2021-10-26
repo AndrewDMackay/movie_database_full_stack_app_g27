@@ -111,8 +111,8 @@ const MovieContainer = () => {
             </div>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
-                <h1>THIS IS THE MOVIE CONTAINER</h1>
-                {!selectedMovie ? <h4>THIS IS THE SEARCH BAR..</h4> : null}
+                <h1>BÖGGIN JÖBBIES</h1>
+                {!selectedMovie ? <h4>SEARCH MOVIES BY TITLE..</h4> : null}
                 <div className="main-container-search-bar">
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
@@ -120,7 +120,7 @@ const MovieContainer = () => {
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers}/> : null}
             </div>
             <div className="user-container">
-                <h1>THIS IS THE USER CONTAINER</h1>
+                <h1>USERS</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
                 {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}
