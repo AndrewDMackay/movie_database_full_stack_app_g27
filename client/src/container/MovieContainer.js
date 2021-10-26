@@ -20,7 +20,7 @@ const MovieContainer = () => {
     // From User Container.. 
     const [allUsers, setAllUsers] = useState([])
     const [loggedIn, setLoggedin] = useState(null)
-  
+
 
     // searches API by movie title
     const onTitleSearched = function (title) {
@@ -103,7 +103,6 @@ const MovieContainer = () => {
         setSelectedMovie(null);
     }
 
-
     return (
         <>
             <div className="main-nav-bar-container">
@@ -117,7 +116,7 @@ const MovieContainer = () => {
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers}/> : null}
+                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
             </div>
             <div className="user-container">
                 <h1>USERS</h1>

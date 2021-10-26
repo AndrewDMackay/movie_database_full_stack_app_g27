@@ -8,9 +8,10 @@ import SearchBar from "./main_movie_page/SearchBar";
 const NavBar = ({ onTitleSearched }) => {
 
 
+
     return (
 
-            <>
+        <>
             <div className="main-nav-bar">
                 <ul>
                     <li>
@@ -27,7 +28,7 @@ const NavBar = ({ onTitleSearched }) => {
                     </div>
                 </ul>
             </div>
-            </>
+        </>
     )
 };
 

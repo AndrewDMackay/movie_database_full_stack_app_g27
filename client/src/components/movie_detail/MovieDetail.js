@@ -44,7 +44,7 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 </div>
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}
-                <button className="custom-button" onClick={handleClick}>HOME</button>
+                <button className="custom-button" onClick={handleClick}>BACK</button>
             </div>
             <div>
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>

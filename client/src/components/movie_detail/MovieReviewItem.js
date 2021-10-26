@@ -15,7 +15,7 @@ const MovieReviewItem = ({ review }) => {
         <h4>THIS IS THE MOVIE REVIEW ITEM</h4>
         <p>User: {review.viewer}</p>
         <p>Comment: {review.comment}</p>
-        <p>Score: {review.score}</p>
+        <p>Score: {review.score} <FaPoop /></p>
       </div>
   )
 }
