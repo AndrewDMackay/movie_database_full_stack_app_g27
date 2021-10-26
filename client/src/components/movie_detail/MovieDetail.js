@@ -46,7 +46,7 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
-            <div className="movie-review-list-container">
+            <div>
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
             </div>
         </div>    

@@ -87,6 +87,7 @@ body {
   margin: 0.5vw;
   padding: 0.5vw; 
   min-width: 23.0vw;
+  max-width: 74.0vw;
   min-height: 35.0vw;
   line-height: 0.5vw;
 
@@ -118,7 +119,7 @@ body {
   padding: 1.5vw; 
   min-width: 45.0vw;
   min-height: 55.0vw;
-  line-height: 1.0vw;
+  line-height: 1.75vw;
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
@@ -131,6 +132,7 @@ body {
     margin: 1.0vw;
     height: 25.0vw;
     width: auto;
+    max-width: 25.0vw;
 
     border: 0.1vw solid #F8F8FF;
     box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
@@ -140,6 +142,46 @@ body {
   margin: 1.0vw;
   height: 35.0vw;
   width: auto;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+}
+
+
+/*  Movie List Container, flex, etc.. */
+
+.movie-review-list-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin: 5.0vw;
+  padding: 0.5vw;
+  /* min-height: 50.0vw;
+  min-width: 76.0vw; */
+
+  background-color: #090909;
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+}
+
+
+/*  Movie Review Items.. */
+
+.movie-review-item {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0.5vw;
+  padding: 0.5vw; 
+  /* min-width: 23.0vw;
+  min-height: 35.0vw; */
+  line-height: 0.5vw;
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
