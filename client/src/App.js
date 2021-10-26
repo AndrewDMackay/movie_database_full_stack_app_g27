@@ -13,6 +13,8 @@ import SearchBar from './components/main_movie_page/SearchBar';
 
 
 function App() {
+
+  
   return (
 
     <Router>
@@ -29,7 +31,7 @@ function App() {
             <Route exact path="/movies" component={MovieContainer} />
             <Route exact path="/users" component={UserContainer} />
           </div>
-        </div>
+        </div> 
       </>
     </Router>
   );

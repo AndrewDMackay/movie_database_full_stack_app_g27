@@ -1,22 +1,11 @@
 
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import SearchBar from "./main_movie_page/SearchBar";
 
-import MovieContainer from "../container/MovieContainer";
-import UserContainer from "../container/UserContainer";
-
 
 const NavBar = ({ onTitleSearched }) => {
-    
-    
-    // const history = useHistory();
-
-    // const goBack = () => {
-    //     history.goBack();
-    // }
 
 
     return (
