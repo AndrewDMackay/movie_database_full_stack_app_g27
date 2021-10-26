@@ -13,14 +13,13 @@ const MovieDetail = ({ selectedMovie, onHomeClick }) => {
 
     }
 
-    // const handleFavouriteToggle = (MovieToUpdate) => {
-    //     const updatedMovies = movies.map((movie) => {
-    //         if(movie.title === MovieToUpdate.title){
-    //             movie.favourite = !movie.favourite
-    //         }
-    //         return movie
-    //     })
-
+    const handleFavouriteToggle = (MovieToUpdate) => {
+        const updatedMovies = movies.map((movie) => {
+            if(movie.title === MovieToUpdate.title){
+                movie.favourite = !movie.favourite
+            }
+            return movie
+        })}
 
 
     return (
