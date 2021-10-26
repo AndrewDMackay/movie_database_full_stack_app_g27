@@ -31,11 +31,16 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 <h2>{selectedMovie.Title}</h2>
                 <img className="movie-detail-poster" src={selectedMovie.Poster} alt="" />
                 <div>
+                    <h5>PLOT</h5>
                     <p>{selectedMovie.Plot}</p>
-                    <p>Director: {selectedMovie.Director}</p>
-                    <p>Cast: {selectedMovie.Actors}</p>
-                    <p>Runtime: {selectedMovie.Runtime}</p>
-                    <p>IMDb: {selectedMovie.Ratings[0].Value}</p>
+                    <h5>DIRECTOR</h5>
+                    <p>{selectedMovie.Director}</p>
+                    <h5>CAST</h5>
+                    <p>{selectedMovie.Actors}</p>
+                    <h5>RUNTIME</h5>
+                    <p>{selectedMovie.Runtime}</p>
+                    <h5>IMDB</h5>
+                    <p>{selectedMovie.Ratings[0].Value}</p>
                 </div>
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}

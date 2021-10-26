@@ -51,8 +51,9 @@ const HomeContainer = () => {
                 <NavBar onTitleSearched={onTitleSearched} />
             </div>
             <div className="home-container">
-                <h1>THIS IS THE HOME PAGE</h1>
-                <div className="logo-icon"><FaPoop /></div>
+                <h1 className="home-heading">BÖGGIN JÖBBIES</h1>
+                <div className="home-logo-icon"><FaPoop /></div>
+                <div className="home-small-logo-icon"><FaPoop /></div>
             </div>
         </>
     )

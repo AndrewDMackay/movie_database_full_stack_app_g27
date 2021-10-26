@@ -146,7 +146,83 @@ body {
 }
 
 
+/*  User Container, flex, etc.. */
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 1.0vw;
+  padding: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
+.user-display-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+
+  margin: 1.0vw;
+  padding: 1.0vw; 
+  min-width: 50.0vw;
+  min-height: 25.0vw;
+  line-height: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
+/* Home Container, home, come landing page.. */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  margin-top: 1.0vw;
+  padding: 1.0vw;
+
+  /* border: 0.1vw solid #B2B2B2;
+  background-color: #090909 */
+}
+
+
 /* Headings.. */
+
+.home-heading {
+  font-weight: bolder;
+  font-size: 4.0vw;
+  text-shadow: 0.0vw 0.0vw 5.0vw #8D8D8D;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
 
 h1 {
   font-weight: bolder;
@@ -206,70 +282,6 @@ h6 {
 
   margin: 0.5vw;
   padding: 0.5vw;
-}
-
-
-/*  User Container, flex, etc.. */
-
-.user-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-
-  margin-left: 10.0vw;
-  margin-right: 10.0vw;
-  margin-top: 1.0vw;
-  padding: 1.0vw;
-
-  border: 0.1vw solid #B2B2B2;
-  background-color: #090909
-}
-
-
-.user-display-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-
-  border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
-
-  margin: 1.0vw;
-  padding: 1.0vw; 
-  min-width: 50.0vw;
-  min-height: 25.0vw;
-  line-height: 1.0vw;
-
-  border: 0.1vw solid #B2B2B2;
-  background-color: #090909
-}
-
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-
-  margin-left: 10.0vw;
-  margin-right: 10.0vw;
-  margin-top: 1.0vw;
-  padding: 1.0vw;
-
-  border: 0.1vw solid #B2B2B2;
-  background-color: #090909
 }
 
 
@@ -414,6 +426,33 @@ a:active {
 
 
 /* Logo, icons, and buttons replaced with icons, or images.. */
+
+.home-logo-icon{
+  font-size: 7.5vw;
+  color: #FFFFFF;
+
+  padding-left: 0.9vw;
+  padding-right: 0.9vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.2vw;
+}
+
+
+.home-small-logo-icon{
+  font-size: 3.0vw;
+  color: #FFFFFF;
+
+  border: 0.1vw solid #B2B2B2;
+  border-radius: 50.0vw;
+  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+
+  margin-top: 23.25vw;
+  padding-left: 0.9vw;
+  padding-right: 0.9vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.2vw;
+}
+
 
 .logo-icon{
   font-size: 3.0vw;
