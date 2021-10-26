@@ -11,7 +11,7 @@ import UserDisplayItem from './UserDisplayItem'
         })
         return(
             <>
-            <div className="user-display">
+            <div className="user-display-container">
                 <h2>ALL USERS</h2>
                 {gridNodes}
             </div>

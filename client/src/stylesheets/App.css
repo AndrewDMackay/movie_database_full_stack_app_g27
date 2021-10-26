@@ -230,6 +230,30 @@ h6 {
 }
 
 
+.user-display-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+
+  margin: 1.0vw;
+  padding: 1.0vw; 
+  min-width: 50.0vw;
+  min-height: 25.0vw;
+  line-height: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  background-color: #090909
+}
+
+
 /* Links, a, and React Router Links.. */
 
 a {
