@@ -22,8 +22,8 @@ const MovieContainer = () => {
         fetch(`https://www.omdbapi.com/?s=${title}&apikey=30f7090a`)
             .then(res => res.json())
             .then(data => {
-                const filteredMovies = data.Search.filter((movie) => movie.Type === "movie")
-                setMovies(filteredMovies)
+                    const filteredMovies = data.Search?.filter((movie) => movie.Type === "movie")
+                    setMovies(filteredMovies)
             })
     }
 
@@ -51,23 +51,23 @@ const MovieContainer = () => {
 
     return (
         <Router>
-          <>
-            <div className="main-nav-bar-container">
-                <NavBar onTitleSearched={onTitleSearched}/>
-            </div>
-          </>
-          <>
-            <div className="movie-container">
-                <div className="logo-icon"><FaPoop /></div>
-                <h1>THIS IS THE MOVIE CONTAINER</h1>
-                {!selectedMovie ?<h4>THIS IS THE SEARCH BAR..</h4> : null}
-                <div className="main-container-search-bar">
-                {!selectedMovie ?<SearchBar onTitleSearched={onTitleSearched} /> : null}
+            <>
+                <div className="main-nav-bar-container">
+                    <NavBar onTitleSearched={onTitleSearched} />
                 </div>
-                {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
-            </div>
-          </>
+            </>
+            <>
+                <div className="movie-container">
+                    <div className="logo-icon"><FaPoop /></div>
+                    <h1>THIS IS THE MOVIE CONTAINER</h1>
+                    {!selectedMovie ? <h4>THIS IS THE SEARCH BAR..</h4> : null}
+                    <div className="main-container-search-bar">
+                        {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
+                    </div>
+                    {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
+                    {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
+                </div>
+            </>
         </Router>
     )
 

@@ -5,11 +5,11 @@ import SearchBar from "./main_movie_page/SearchBar";
 
 
 const NavBar = ({ onTitleSearched }) => {
-    const history = useHistory();
+    // const history = useHistory();
 
-    const goBack = () => {
-        history.goBack();
-    }
+    // const goBack = () => {
+    //     history.goBack();
+    // }
 
 
     return (
