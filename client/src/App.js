@@ -1,11 +1,12 @@
 
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './stylesheets/App.css';
 
+import HomeContainer from './container/HomeContainer';
 import MovieContainer from './container/MovieContainer';
 import UserContainer from './container/UserContainer';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavBar from './components/NavBar';
 import SearchBar from './components/main_movie_page/SearchBar';

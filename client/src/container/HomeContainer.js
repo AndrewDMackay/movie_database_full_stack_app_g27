@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 
 import { FaPoop } from "react-icons/fa";
 
-import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
 
 
@@ -60,5 +59,5 @@ const HomeContainer = () => {
 
 }
 
-export default MovieContainer;
+export default HomeContainer;
 
