@@ -30,12 +30,10 @@ const MovieReviewList = ({ selectedMovie, loggedIn, allUsers }) => {
 
 
     return (
-        <>
-            <div className="movie-review-list-container">
-                <div className="movie-review-list">
-                <h3>REVIEWS</h3>
+        <>         
+            <h3>REVIEWS</h3>
+            <div className="movie-review-list">
                 {reviewNodes}
-                </div>
             </div>
         </>
     )

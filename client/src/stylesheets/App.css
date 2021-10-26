@@ -150,7 +150,7 @@ body {
 
 /*  Movie List Container, flex, etc.. */
 
-.movie-review-list-container {
+/* .movie-review-list-container {
   display: flex;
   flex-wrap: wrap;
 
@@ -158,27 +158,25 @@ body {
   align-content: center;
   justify-content: center;
 
-  min-height: 50.0vw;
+  margin: 0.0vw;
+  min-height: 0.0;
   min-width: 76.0vw;
-
-  background-color: #090909;
-  border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
-}
+} */
 
 
 .movie-review-list {
   display: flex;
   flex-wrap: wrap;
-/* 
+
   align-items: center;
   align-content: center;
-  justify-content: center; */
+  justify-content: center;
 
-  margin: 5.0vw;
-  padding: 0.5vw;
-  /* min-height: 50.0vw;
-  min-width: 76.0vw; */
+  margin: 1.0vw;
+  padding: 1.5vw; 
+  min-width: 45.0vw;
+  min-height: 25.0vw;
+  line-height: 1.75vw;
 
   background-color: #090909;
   border: 0.1vw solid #B2B2B2;
@@ -195,7 +193,7 @@ body {
   justify-content: center;
   text-align: center;
 
-  margin: 0.5vw;
+  margin: 1.0vw;
   padding: 0.5vw; 
   min-width: 23.0vw;
   min-height: .0vw;
@@ -555,6 +553,14 @@ a:active {
 
 
 .movie-review-item-rating-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
   font-size: 0.5vw;
   color: #FFFFFF;
   
