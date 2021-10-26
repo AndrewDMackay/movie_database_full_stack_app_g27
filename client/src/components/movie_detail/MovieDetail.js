@@ -44,7 +44,10 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
         </div>
     )
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
 
 export default MovieDetail;
 
