@@ -5,10 +5,14 @@ import MovieReviewList from './MovieReviewList';
 import { FaPoop } from "react-icons/fa";
 
 
+<<<<<<< HEAD
 const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers }) => {
+=======
+const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
+>>>>>>> develop
 
 
-    const handleClick = function(){
+    const handleClick = function () {
         onHomeClick();
 
 
@@ -21,15 +25,19 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
             }
             return movie
         })}
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
 
 
     return (
-        
+
         <div className="movie-detail-container">
             <div className="movie-detail">
                 <div className="movie-detail-icon"><FaPoop /></div>
                 <h2>{selectedMovie.Title}</h2>
-                <img className="movie-detail-poster" src={selectedMovie.Poster} alt=""/>
+                <img className="movie-detail-poster" src={selectedMovie.Poster} alt="" />
                 <div>
                     <p><u>{selectedMovie.Plot}</u></p>
                     <p>Director: {selectedMovie.Director}</p>
@@ -41,12 +49,20 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
+<<<<<<< HEAD
             <div className="movie-review-list-container">
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
             </div>
         </div>    
+=======
+        </div>
+>>>>>>> develop
     )
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> develop
 
 export default MovieDetail;
 

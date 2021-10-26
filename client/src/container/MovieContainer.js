@@ -117,6 +117,7 @@ const MovieContainer = () => {
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
+<<<<<<< HEAD
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers}/> : null}
             </div>
             <div className="user-container">
@@ -124,6 +125,9 @@ const MovieContainer = () => {
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
                 {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}
+=======
+                {selectedMovie ? <MovieDetail movies={movies} selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
+>>>>>>> develop
             </div>
         </>
     )
