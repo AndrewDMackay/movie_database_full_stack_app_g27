@@ -19,25 +19,6 @@ MongoClient.connect('mongodb://localhost:27017', { useUnifiedTopology: true })
     const usersRouter = createRouter(usersCollection);
     const imdb = imdbRouter(imdbCollection)
 
-    // app.post('/api/users', (req, res) => {
-    //   const newData = req.body;
-    //   if (newData.hasOwnProperty("username") && newData.hasOwnProperty("email")) {
-    //     usersCollection
-    //       .insertOne(newData)
-    //       .then((result) => {
-    //         res.json(result.ops[0]);
-    //       })
-    //       .catch((err) => {
-    //         console.error(err);
-    //         res.status(500);
-    //         res.json({ status: 500, error: err });
-    //       });
-    //   } else {
-    //     res.status(400);
-    //     res.send("please make sure user has name and email");
-    //   }
-    // });
-
 
     
     app.use('/api/users', usersRouter);
