@@ -224,6 +224,16 @@ body {
 }
 
 
+.logo-heading {
+  font-weight: bolder;
+  font-size: 4.0vw;
+  text-shadow: 0.0vw 0.0vw 5.0vw #8D8D8D;
+
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
 h1 {
   font-weight: bolder;
   font-size: 4.0vw;

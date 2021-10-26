@@ -111,7 +111,7 @@ const MovieContainer = () => {
             </div>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
-                <h1>BÖGGIN JÖBBIES</h1>
+                <h1 className="logo-heading">BÖGGIN JÖBBIES</h1>
                 {!selectedMovie ? <h4>SEARCH MOVIES BY TITLE..</h4> : null}
                 <div className="main-container-search-bar">
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}

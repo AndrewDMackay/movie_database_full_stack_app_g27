@@ -33,13 +33,13 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 <div>
                     <h5>PLOT</h5>
                     <p>{selectedMovie.Plot}</p>
-                    <h5>DIRECTOR</h5>
+                    <h6>DIRECTOR</h6>
                     <p>{selectedMovie.Director}</p>
-                    <h5>CAST</h5>
+                    <h6>CAST</h6>
                     <p>{selectedMovie.Actors}</p>
-                    <h5>RUNTIME</h5>
+                    <h6>RUNTIME</h6>
                     <p>{selectedMovie.Runtime}</p>
-                    <h5>IMDB</h5>
+                    <h6>IMDB</h6>
                     <p>{selectedMovie.Ratings[0].Value}</p>
                 </div>
                 {/* add favourite tick box (see UserFavourite.js) */}
