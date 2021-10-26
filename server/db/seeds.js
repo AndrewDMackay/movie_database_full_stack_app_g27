@@ -27,6 +27,11 @@ db.users.insertMany([
             movie: "Anchorman",
             comment: "test comment Anchorman",
             score: 4
+        },
+        {
+            movie: "Batman",
+            comment: "test comment 2 Batman",
+            score: 4
         }
         ]
     }
