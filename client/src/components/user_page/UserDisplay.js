@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import UserDisplayItem from './UserDisplayItem'
 
@@ -11,7 +10,7 @@ import UserDisplayItem from './UserDisplayItem'
         })
         return(
             <>
-            <div className="user-display">
+            <div className="user-display-container">
                 <h2>ALL USERS</h2>
                 {gridNodes}
             </div>

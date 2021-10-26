@@ -1,6 +1,5 @@
 
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
     const UserDisplayItem = ({user, onUserClick, onUserDelete}) => {
@@ -16,7 +15,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
         return(
         <>
         <div className="user-display-item">
-            <p onClick={handleClick}>{user.name}</p>
+            <p onClick={handleClick}>{user.username}</p>
             <p>{user.email}</p>
             <p>{user.password}</p>
             <button className="custom-button" onClick={handleDelete}>DELETE</button>
