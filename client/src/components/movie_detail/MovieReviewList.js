@@ -8,9 +8,18 @@ import MovieReviewItem from './MovieReviewItem';
 
 const MovieReviewList = ({ selectedMovie, loggedIn, allUsers }) => {
 
-            
-    const reviewNodes = allUsers.map((user, index) => {
-        return <MovieReviewItem user={user} key={index}/>
+    const reviewList = []
+
+    for (let user of allUsers) {
+        for (let review of user.review) {
+            reviewList.push(review)
+        }
+    }
+ 
+    const movieReviews = reviewList.filter((review) => review.movie === selectedMovie.Title)
+
+    const reviewNodes = movieReviews.map((review, index) => {
+        return <MovieReviewItem review={review} key={index} />
     })
 
 
