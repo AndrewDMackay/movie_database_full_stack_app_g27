@@ -3,13 +3,11 @@ import React, { useState } from 'react'
 
 import { FaPoop } from "react-icons/fa";
 
-import MovieList from "../components/main_movie_page/MovieList";
-import MovieDetail from '../components/movie_detail/MovieDetail';
 import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
 
 
-const MovieContainer = () => {
+const HomeContainer = () => {
     const [movies, setMovies] = useState(null)
     const [selectedMovie, setSelectedMovie] = useState(null)
 
@@ -53,15 +51,9 @@ const MovieContainer = () => {
             <div className="main-nav-bar-container">
                 <NavBar onTitleSearched={onTitleSearched} />
             </div>
-            <div className="movie-container">
+            <div className="home-container">
+                <h1>THIS IS THE HOME PAGE</h1>
                 <div className="logo-icon"><FaPoop /></div>
-                <h1>THIS IS THE MOVIE CONTAINER</h1>
-                {!selectedMovie ? <h4>THIS IS THE SEARCH BAR..</h4> : null}
-                <div className="main-container-search-bar">
-                    {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
-                </div>
-                {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
             </div>
         </>
     )

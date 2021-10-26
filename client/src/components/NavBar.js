@@ -1,8 +1,12 @@
 
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import SearchBar from "./main_movie_page/SearchBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import SearchBar from "./main_movie_page/SearchBar";
+
+import MovieContainer from "../container/MovieContainer";
+import UserContainer from "../container/UserContainer";
 
 
 const NavBar = ({ onTitleSearched }) => {
@@ -17,7 +21,6 @@ const NavBar = ({ onTitleSearched }) => {
 
     return (
 
-        <Router>
             <>
             <div className="main-nav-bar">
                 <ul>
@@ -25,10 +28,10 @@ const NavBar = ({ onTitleSearched }) => {
                         <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/login">USER LOG IN</Link>
+                        <Link to="/users">USER LOG IN</Link>
                     </li>
                     <li>
-                        <Link to="/year">SEARCH MOVIES</Link>
+                        <Link to="/movies">SEARCH MOVIES</Link>
                     </li>
                     <div className="nav-search-bar">
                         <SearchBar onTitleSearched={onTitleSearched} />
@@ -36,7 +39,6 @@ const NavBar = ({ onTitleSearched }) => {
                 </ul>
             </div>
             </>
-        </Router>
     )
 };
 
