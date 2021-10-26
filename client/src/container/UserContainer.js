@@ -1,11 +1,10 @@
 
 import React, { useState, useEffect } from 'react'
 
-import UserDisplay from '../components/user_page/UserDisplay'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
+
 import NavBar from '../components/NavBar'
-import SearchBar from '../components/main_movie_page/SearchBar';
 
 import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieService'
 

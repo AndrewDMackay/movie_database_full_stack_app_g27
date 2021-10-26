@@ -8,7 +8,6 @@ import MovieDetail from '../components/movie_detail/MovieDetail';
 import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
 
-import UserDisplay from '../components/user_page/UserDisplay'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
 
