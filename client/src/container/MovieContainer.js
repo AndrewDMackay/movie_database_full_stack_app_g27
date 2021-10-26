@@ -61,7 +61,7 @@ const MovieContainer = () => {
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
+                {selectedMovie ? <MovieDetail movies={movies} selectedMovie={selectedMovie} onHomeClick={onHomeClick} /> : null}
             </div>
         </>
     )
