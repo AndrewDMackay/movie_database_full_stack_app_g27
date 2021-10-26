@@ -2,20 +2,24 @@
 import React, { useState } from 'react'
 
 
-const reviewList = (({reviews}) => {
+const MovieReviewList = (({reviews, selectedMovie, loggedIn}) => {
+    
+    
     return(
-        <div id="review-list">
-        <ul>
+        <div className="movie-review-list-container">
+        <h5>THIS IS THE MOVIE REVIEW LIST</h5>
+        {/* <ul>
         {reviews.map(review => {
             return(
                 <li key={review.name}>{review.name} {review.text} </li>
             )
         })}
-
-        </ul>
-
+        </ul> */}
         </div>
     )
 
 });
+
+
+export default MovieReviewList
 

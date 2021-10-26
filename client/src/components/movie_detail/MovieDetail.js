@@ -1,10 +1,11 @@
 
 import React from 'react';
+import MovieReviewList from './MovieReviewList';
 
 import { FaPoop } from "react-icons/fa";
 
 
-const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
+const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn }) => {
 
 
     const handleClick = function(){
@@ -39,6 +40,9 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick }) => {
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
+            </div>
+            <div className="movie-review-list-container">
+                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn}/>
             </div>
         </div>    
     )

@@ -2,21 +2,21 @@
 import React, { useState } from 'react'
 
 
-function reviewForm() {
-    const [name, setName] = useState("");
+function MovieReviewForm() {
+    const [] = useState("");
 
     return (
-        <form>
-            <label>Name:
-            <input type="text"/>
-            </label>
-            <label>
-                Review:
-                <input type="text"/>
-            </label>
-
-        </form>
-    )
+            <>
+                <div className="movie-review-form">
+                    <h4>CREATE NEW REVIEW</h4>
+                    <form className="form-container" onSubmit={handleSubmit}>
+                        <input className="form-inputs" type="text" id="comment" placeholder="Enter Comment.." value={comment} onChange={handleCommentChange} required />
+                        <input className="form-inputs" type="text" id="score" placeholder="Enter Score.." value={score} onChange={handleScoreChange} required />
+                        <input type="submit" value="submit" />
+                    </form>
+                </div>
+            </>
+            )
 };
 
-export default MovieReviewForm
+            export default MovieReviewForm
