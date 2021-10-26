@@ -7,6 +7,7 @@ import MovieList from "../components/main_movie_page/MovieList";
 import MovieDetail from '../components/movie_detail/MovieDetail';
 import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
+import RecentReviewsList from '../components/main_movie_page/RecentReviewsList';
 
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
@@ -117,6 +118,9 @@ const MovieContainer = () => {
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
                 {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
+            </div>
+            <div className="user-container">
+                <RecentReviewsList allUsers={allUsers} />
             </div>
             <div className="user-container">
                 <h1>USERS</h1>
