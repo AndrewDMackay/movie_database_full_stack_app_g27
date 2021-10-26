@@ -12,11 +12,17 @@ const MovieReviewList = ({ selectedMovie, loggedIn, allUsers }) => {
 
     for (let user of allUsers) {
         for (let review of user.review) {
-            reviewList.push(review)
+            let movieReview = {
+                viewer: user.username,
+                comment: review.comment,
+                score: review.score,
+                movieName: review.movie
+            }
+            reviewList.push(movieReview)
         }
     }
 
-    const movieReviews = reviewList.filter((review) => review.movie === selectedMovie.Title)
+    const movieReviews = reviewList.filter((review) => review.movieName === selectedMovie.Title)
 
     const reviewNodes = movieReviews.map((review, index) => {
         return <MovieReviewItem review={review} key={index} />
