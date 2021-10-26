@@ -5,7 +5,7 @@ import MovieReviewList from './MovieReviewList';
 import { FaPoop } from "react-icons/fa";
 
 
-const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn }) => {
+const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers }) => {
 
 
     const handleClick = function(){
@@ -42,7 +42,7 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn }) => {
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
             <div className="movie-review-list-container">
-                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn}/>
+                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
             </div>
         </div>    
     )
