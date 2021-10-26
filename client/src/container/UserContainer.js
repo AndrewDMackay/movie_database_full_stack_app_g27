@@ -97,7 +97,7 @@ const UserContainer = () => {
                 <h1>THIS IS THE USER CONTAINER</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
-                <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} />
+                {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}
             </div>
         </>
     )
