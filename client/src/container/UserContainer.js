@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
 
-import NavBar from '../components/NavBar'
+import NavBarNoSearch from '../components/NavBarNoSearch';
 
 import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieService'
 
@@ -90,8 +90,8 @@ const UserContainer = () => {
         
     return (
         <>
-            <div className="main-nav-bar-container">
-                <NavBar onTitleSearched={onTitleSearched} />
+             <div className="main-nav-bar-container">
+                <NavBarNoSearch />
             </div>
             <div className="user-container">
                 <h1>USERS</h1>

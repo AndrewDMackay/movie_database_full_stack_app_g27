@@ -15,7 +15,9 @@ font-family: 'Roboto Condensed', sans-serif; */
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 1.0vw;
-  color: #FDFDFF; 
+  color: #FDFDFF;
+  text-shadow: 0.0vw 0.0vw 1.5vw #8D8D8D;
+
 
   margin: 0;
 
@@ -507,7 +509,7 @@ a:active {
 
 
 .home-small-logo-icon{
-  font-size: 4.0vw;
+  font-size: 3.0vw;
   color: #FFFFFF;
 
   border: 0.1vw solid #B2B2B2;
