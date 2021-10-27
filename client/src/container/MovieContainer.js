@@ -84,7 +84,9 @@ const MovieContainer = () => {
     }
 
     const onNewReviewSubmit = (review) => {
+        console.log("review", review)
         updateUser(review, loggedIn._id).then((data) => {
+            addUser(data);
         })
     }
 

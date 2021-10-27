@@ -23,6 +23,7 @@ export const deleteUser = (id) => {
 }
 
 export const updateUser = (payload, id) => {
+    console.log("payload", payload)
     return fetch(baseURL + id, {
         method: 'PUT',
         body: JSON.stringify(payload),
