@@ -3,9 +3,10 @@ import React from 'react';
 import MovieReviewList from './MovieReviewList';
 
 import { FaPoop } from "react-icons/fa";
+import ReactPlayer from 'react-player/youtube';
 
 
-const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers }) => {
+const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, youtubeVideo }) => {
 
 
     const handleClick = function () {
@@ -45,6 +46,9 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>BACK</button>
+            </div>
+            <div className='YTplayer'>
+                <ReactPlayer url={youtubeVideo}/>
             </div>
             <div>
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>

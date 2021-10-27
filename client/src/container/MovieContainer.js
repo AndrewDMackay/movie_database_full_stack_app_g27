@@ -18,6 +18,7 @@ import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieSer
 const MovieContainer = () => {
     const [movies, setMovies] = useState(null)
     const [selectedMovie, setSelectedMovie] = useState(null)
+    const [youtubeVideo, setYoutubeVideo] = useState(null)
     // From User Container.. 
     const [allUsers, setAllUsers] = useState([])
     const [loggedIn, setLoggedin] = useState(null)
@@ -40,7 +41,12 @@ const MovieContainer = () => {
     const onMovieClick = function (movie) {
         fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=30f7090a`)
             .then(res => res.json())
-            .then(data => setSelectedMovie(data))
+            .then((data) => {
+                setSelectedMovie(data)
+                fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`)
+                    .then(res => res.json())
+                    .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items[0].id.videoId}`))
+            })
     }
 
 
@@ -117,7 +123,7 @@ const MovieContainer = () => {
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
+                {selectedMovie ? <MovieDetail youtubeVideo={youtubeVideo} selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
             </div>
             <div className="user-container">
                 <RecentReviewsList allUsers={allUsers} />
