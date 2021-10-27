@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import { FaPoop } from "react-icons/fa";
 
-import NavBarNoSearch from '../components/NavBarNoSearch';
+import NavBarNoSearch from '../components/nav_bar/NavBarNoSearch';
 
 
 const HomeContainer = () => {

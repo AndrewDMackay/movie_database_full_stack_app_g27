@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { FaPoop } from "react-icons/fa";
 
-import SearchBar from "./main_movie_page/SearchBar";
+import SearchBar from "../main_movie_page/SearchBar";
 
 
 const NavBar = ({ onTitleSearched }) => {

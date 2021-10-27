@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
 
-import NavBarNoSearch from '../components/NavBarNoSearch';
+import NavBarNoSearch from '../components/nav_bar/NavBarNoSearch';
 
 import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieService'
 

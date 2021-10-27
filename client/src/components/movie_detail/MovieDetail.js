@@ -34,22 +34,26 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
                 <h2>{selectedMovie.Title}</h2>
                 <img className="movie-detail-poster" src={selectedMovie.Poster} alt="" />
                 <div>
+                    <hr/>
                     <h5>PLOT</h5>
                     <p>{selectedMovie.Plot}</p>
+                    <hr/>
                     <h6>DIRECTOR</h6>
                     <p>{selectedMovie.Director}</p>
                     <h6>CAST</h6>
                     <p>{selectedMovie.Actors}</p>
+                    <hr/>
                     <h6>RUNTIME</h6>
                     <p>{selectedMovie.Runtime}</p>
                     <h6>IMDB</h6>
                     <p>{selectedMovie.Ratings[0].Value}</p>
+                    <hr/>
                 </div>
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
-            <div className='YTplayer'>
+            <div className="trailer-container">
                 <ReactPlayer url={youtubeVideo} />
             </div>
             <div>

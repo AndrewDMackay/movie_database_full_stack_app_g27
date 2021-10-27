@@ -9,7 +9,7 @@ import MovieContainer from './container/MovieContainer';
 import UserContainer from './container/UserContainer';
 import RecentReviewsList from './components/main_movie_page/RecentReviewsList';
 
-import NavBar from './components/NavBar';
+import NavBar from './components/nav_bar/NavBar';
 import SearchBar from './components/main_movie_page/SearchBar';
 
 
