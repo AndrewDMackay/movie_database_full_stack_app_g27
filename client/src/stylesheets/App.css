@@ -267,7 +267,7 @@ body {
   margin-top: 1.0vw;
   padding: 1.0vw;
   min-width: auto;
- min-height: auto;
+  min-height: auto;
 
   /* border: 0.1vw solid #B2B2B2;
   background-color: #090909 */
@@ -518,7 +518,7 @@ a:active {
   border-radius: 50.0vw;
   box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
 
-  margin-top: 18.0vw;
+  margin-top: 18.5vw;
   padding-left: 0.9vw;
   padding-right: 0.9vw;
   padding-top: 0.1vw;
