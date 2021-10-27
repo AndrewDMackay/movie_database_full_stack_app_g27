@@ -29,7 +29,9 @@ const RecentReviewsList = ({ allUsers }) => {
     return (
         <>
             <h3>RECENT REVIEWS</h3>
+            <div className="recent-reviews-container">
             {recentReviewNodes}
+            </div>
         </>
     )
 }

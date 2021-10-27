@@ -53,7 +53,8 @@ body {
   padding: 5.0vw;
 
   border: 0.1vw solid #B2B2B2;
-  background-color: #090909
+  background-color: #090909;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -73,8 +74,8 @@ body {
   min-width: 76.0vw;
 
   background-color: #090909;
-  /* border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD; */
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -94,7 +95,7 @@ body {
   line-height: 0.5vw;
 
   border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -124,20 +125,20 @@ body {
   line-height: 1.75vw;
 
   border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
 /*  Images, List Item, and Movie Detail posters/ */
 
 .list-item-poster {
-    margin: 1.0vw;
-    height: 25.0vw;
-    width: auto;
-    max-width: 25.0vw;
+  margin: 1.0vw;
+  height: 25.0vw;
+  width: auto;
+  max-width: 25.0vw;
 
-    border: 0.1vw solid #F8F8FF;
-    box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 .movie-detail-poster {
@@ -146,7 +147,7 @@ body {
   width: auto;
 
   border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -181,10 +182,28 @@ body {
   line-height: 1.75vw;
 
   background-color: #090909;
-  border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.1vw 0.1vw 0.1vw #92A0AD;
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
+
+.recent-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  /* margin: 1.0vw;
+  padding: 1.5vw;  */
+  min-width: 45.0vw;
+  min-height: 25.0vw;
+  line-height: 1.75vw;
+
+  background-color: #090909;
+  /* border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD; */
+}
 
 
 /*  Movie Review Items.. */
@@ -197,12 +216,12 @@ body {
 
   margin: 1.0vw;
   padding: 1.5vw; 
-  min-width: 23.0vw;
+  width: 20.0vw;
   min-height: 25.0vw;
-  line-height: 1.0vw;
+  line-height: 1.5vw;
 
   border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -238,7 +257,7 @@ body {
   text-align: center;
 
   border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 
   margin: 1.0vw;
   padding: 1.0vw; 
@@ -268,9 +287,6 @@ body {
   padding: 1.0vw;
   min-width: auto;
   min-height: auto;
-
-  /* border: 0.1vw solid #B2B2B2;
-  background-color: #090909 */
 }
 
 
@@ -366,22 +382,6 @@ a {
 }
 
 
-/* a:link { 
-}
-
-
-a:visited { 
-}
-
-
-a:hover { 
-}
-
-
-a:active { 
-} */
-
-
 /* Buttons, custom buttons, and submit inputs.. */
 
 .custom-button, input[type=submit] {
@@ -425,7 +425,7 @@ a:active {
 
   background-color: #090909;
   border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -445,7 +445,7 @@ a:active {
 
   background-color: #090909;
   border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -465,7 +465,7 @@ a:active {
 
   background-color: #090909;
   border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -513,7 +513,7 @@ a:active {
 
   border: 0.1vw solid #B2B2B2;
   border-radius: 50.0vw;
-  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 
   margin-top: 23.25vw;
   padding-left: 0.9vw;
@@ -529,7 +529,7 @@ a:active {
 
   border: 0.1vw solid #B2B2B2;
   border-radius: 50.0vw;
-  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 
   padding-left: 0.9vw;
   padding-right: 0.9vw;
@@ -575,12 +575,12 @@ a:active {
   color: #FFFFFF;
   
   padding: 0.5vw;
-  margin-left: 10.0vw;
-  margin-right: 10.0vw;
+  margin-left: 7.0vw;
+  margin-right: 7.0vw;
   min-width: 1.0vw;
 
   border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -598,11 +598,13 @@ a:active {
   
   margin: 0.0vw;
   padding: 0.0vw;
-  min-width: 1.0vw;
-  min-height: 1.0vw;
+  /* min-width: 1.0vw;
+  min-height: 1.0vw; */
+  margin-left: 4.0vw;
+  margin-right: 4.0vw;
 
   border: 0.1vw solid #B2B2B2;
-  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 
@@ -616,7 +618,7 @@ hr {
   border: 0vw none;
   color: #FFFFFF;
   height: 0.1vw;
-  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+  box-shadow: 0.0vw 0.0vw 1.5vw #92A0AD;
 }
 
 /* .image-button {
@@ -704,97 +706,4 @@ hr {
   box-sizing: border-box;
   outline: none;
 }
-
-
-/* CSS for dropdowns if implemented.. */
-
-/* .dropdown {
-float: left;
-overflow: hidden;
-}
-
-
-.dropdown .drop-button {
-font-size: 1.3vw;  
-border: none;
-outline: none;
-color: whitesmoke;
-padding: 0.9vw 1vw;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
-cursor: pointer;
-}
-
-
-.menu a:hover, .dropdown:hover .drop-button {
-background-color: #0E0E0E;
-}
-
-
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: black;
-min-width: 1.5vw;
-box-shadow: 0vw 0.8vw 1vw 0vw rgba(0,0,0,0.2);
-z-index: 10;
-cursor: pointer;
-}
-
-
-.dropdown-content a {
-float: none;
-color: ghostwhite;
-padding: 0.65vw 0.85vw;
-display: block;
-text-align: left;
-font-size: 0.9vw;
-}
-
-
-.dropdown-content a:hover {
-background-color:black;
-}
-
-
-.dropdown:hover .dropdown-content {
-display: block;
-} */
-
-
-/* Custom Radio Buttons, input for forms.. */
-
-  /* input[type="radio"] {
-  visibility: hidden;
-}
-
-
-.radio-button input[type="radio"]:after {
-  width: 1vw;
-  height: 1.0vw;
-  border-radius: 1.0vw;
-  top: -0.5vw;
-  left: -0.5vw;
-  position: relative;
-  background-color: #1E1E1E;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 0.1vw solid white;
-  }
-
-  .radio-button input[type="radio"]:checked:after {
-  width: 1.0vw;
-  height: 1.0vw;
-  border-radius: 1.0vw;
-  top: -0.5vw;
-  left: -0.5vw;
-  position: relative;
-  background-color: #B2B2B2;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 0.1vw solid white;
-} */
 
