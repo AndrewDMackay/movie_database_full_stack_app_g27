@@ -96,6 +96,8 @@ body {
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.0vw 0.0vw 0.6vw #92A0AD;
+
+  cursor: pointer;
 }
 
 
@@ -129,6 +131,42 @@ body {
 }
 
 
+.trailer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.trailer-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.trailer-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0.0vw;
+  padding: 0.5vw;
+
+  border: 0.1vw solid #F8F8FF;
+  box-shadow: 0.0vw 0.0vw 0.6vw #92A0AD;
+}
+
+
 /*  Images, List Item, and Movie Detail posters/ */
 
 .list-item-poster {
@@ -153,19 +191,6 @@ body {
 
 /*  Movie List Container, flex, etc.. */
 
-/* .movie-review-list-container {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-
-  margin: 0.0vw;
-  min-height: 0.0;
-  min-width: 76.0vw;
-} */
-
 
 .movie-review-list {
   display: flex;
@@ -177,8 +202,8 @@ body {
 
   margin: 1.0vw;
   padding: 1.5vw; 
+  min-height: 0.0vw;
   min-width: 45.0vw;
-  min-height: 25.0vw;
   line-height: 1.75vw;
 
   background-color: #090909;
@@ -194,15 +219,11 @@ body {
   align-content: center;
   justify-content: center;
   
-  /* margin: 1.0vw;
-  padding: 1.5vw;  */
+  margin: 0.0vw;
+  padding: 0.0vw; 
   min-width: 45.0vw;
   min-height: 25.0vw;
   line-height: 1.75vw;
-
-  background-color: #090909;
-  /* border: 0.1vw solid #F8F8FF;
-  box-shadow: 0.0vw 0.0vw 0.6vw #92A0AD; */
 }
 
 
@@ -409,6 +430,8 @@ a {
 
 /* Forms, form containers, and form inputs.. */
 
+/* User forms.. */
+
 .new-user-form {
   display: flex;
   flex-direction: column;
@@ -449,6 +472,8 @@ a {
 }
 
 
+/* Review forms.. */
+
 .movie-review-form {
   display: flex;
   flex-direction: column;
@@ -475,10 +500,12 @@ a {
 }
 
 
+/* All forms, inputs, and selects.. */
+
 .form-inputs, select {
   font-size: 1.0vw;
   font-family: 'Oswald', sans-serif;
-  color: #0F0F0F;
+  color: #323232;
   text-transform: uppercase;
 
   padding: 0.5vw;
@@ -489,12 +516,24 @@ a {
 }
 
 
+.user-form-inputs {
+  font-size: 1.0vw;
+  font-family: 'Oswald', sans-serif;
+  color: #323232;
+
+  padding: 0.5vw;
+  margin: 0.5vw;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
 .form-inputs:focus{
   outline: none;     
 }
 
 
-/* Logo, icons, and buttons replaced with icons, or images.. */
+/* Logo, icons, and buttons replaced with icons, or images, home page icons.. */
 
 .home-logo-icon{
   font-size: 7.5vw;
@@ -538,6 +577,8 @@ a {
 }
 
 
+/* Movie container icons.. */
+
 .movie-detail-icon {
   font-size: 1.5vw;
   color: #FFFFFF;
@@ -552,6 +593,8 @@ a {
   color: #FFFFFF;
 }
 
+
+/* Movie review icons, and rating icons.. */
 
 .movie-review-item-icon {
   font-size: 1.5vw;
@@ -613,26 +656,25 @@ a {
 }
 
 
+/* Search bar icons, and error icons.. */
+
+.movie-search-error-icon {
+  font-size: 1.0vw;
+  color: #FFFFFF;
+  
+  margin: 0.0vw;
+  padding: 0.0vw;
+}
+
+
+/* Custom hr line, text divider.. */
+
 hr {
   background-color: #FFFFFF;
   border: 0.0vw none;
   color: #FFFFFF;
   height: 0.05vw;
   box-shadow: 0.0vw 0.0vw 0.5vw #92A0AD;
-}
-
-/* .image-button {
-  display: contents;
-  cursor: pointer;
-  font-size: 1.0vw;
-  color: #FFFFFF;
-}
-
-
-.float-button {
-  display: contents;
-  cursor: pointer;
-  font-size: 1.0vw;
 }
 
 
@@ -707,3 +749,14 @@ hr {
   outline: none;
 }
 
+
+.search-bar-error-message {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0.5vw;
+  padding: 0.5vw; 
+  line-height: 1.5vw;
+}

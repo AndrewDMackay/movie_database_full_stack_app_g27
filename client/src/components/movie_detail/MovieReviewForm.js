@@ -38,8 +38,8 @@ const handleSubmit = (event) => {
             <div className="movie-review-form">
                 <h4>CREATE NEW REVIEW</h4>
                 <form className="form-container" onSubmit={handleSubmit}>
-                    <input className="form-inputs" type="text" id="comment" placeholder="Enter Comment.." value={comment} onChange={handleCommentChange} required />
-                    <input className="form-inputs" type="number" min="1" max="5" id="score" placeholder="Enter Score.." value={score} onChange={handleScoreChange} required />
+                    <input className="form-inputs" type="text" id="comment" placeholder="ENTER COMMENT.." value={comment} onChange={handleCommentChange} required />
+                    <input className="form-inputs" type="number" min="1" max="5" id="score" placeholder="1.." value={score} onChange={handleScoreChange} required />
                     <input type="submit" value="submit" />
                 </form>
             </div>

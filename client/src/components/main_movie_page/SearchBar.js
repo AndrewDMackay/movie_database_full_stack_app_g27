@@ -20,7 +20,7 @@ const SearchBar = ({ onTitleSearched }) => {
         <>  
             <div>
                 <form className="search-bar-form">
-                    <input className="form-inputs" type="text" id="title" placeholder="Search by title..." onChange={handleChange} />
+                    <input className="form-inputs" type="text" id="title" placeholder="SEARCH BY TITLE..." onChange={handleChange} />
                     <input type="submit" value="Search" onClick={handleSubmit} />
                 </form>
             </div>

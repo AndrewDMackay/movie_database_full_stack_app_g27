@@ -17,14 +17,6 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
 
     }
 
-    // const handleFavouriteToggle = (MovieToUpdate) => {
-    //     const updatedMovies = movies.map((movie) => {
-    //         if(movie.title === MovieToUpdate.title){
-    //             movie.favourite = !movie.favourite
-    //         }
-    //         return movie
-    //     })}
-
 
     return (
 
@@ -49,12 +41,13 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
                     <p>{selectedMovie.Ratings[0].Value}</p>
                     <hr/>
                 </div>
-                {/* add favourite tick box (see UserFavourite.js) */}
-                {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
             <div className="trailer-container">
-                <ReactPlayer url={youtubeVideo} />
+                <h3>TRAILER</h3>
+                <div className="trailer-contents">
+                <ReactPlayer className="trailer-player" url={youtubeVideo} />
+                </div>
             </div>
             <div>
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers} />

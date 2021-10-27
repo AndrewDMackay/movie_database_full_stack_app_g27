@@ -31,8 +31,8 @@ const UserLogin = ({onLoginSubmit}) => {
             <div className="user-login-form">
             <h4>EXISTING USER</h4>
             <form className="form-container" onSubmit={handleSubmit}>
-                    <input className="form-inputs" type="text" id="name" placeholder="Enter Username.." value={username} onChange={handleNameChange} required/>
-                    <input className="form-inputs" type="password" id="password" placeholder="Password.." value={password} onChange={handlePasswordChange} required/>
+                    <input className="user-form-inputs" type="text" id="name" placeholder="ENTER USERNAME.." value={username} onChange={handleNameChange} required/>
+                    <input className="user-form-inputs" type="password" id="password" placeholder="PASSWORD.." value={password} onChange={handlePasswordChange} required/>
                     <input type="submit" value="Log in" />
                 </form>
             </div>

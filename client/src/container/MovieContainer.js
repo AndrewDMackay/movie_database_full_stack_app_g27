@@ -48,13 +48,6 @@ const MovieContainer = () => {
                     .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items[0].id.videoId}`))
             })
     }
- 
-
-    // const getMoviesByGenre = function(genre){
-    //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
-    //     .then(res => res.json())
-    //     .then(movies => setMovies(movies))
-    // }
 
 
     // Added from User Container..
