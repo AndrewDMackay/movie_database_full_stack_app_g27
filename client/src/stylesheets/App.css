@@ -611,6 +611,14 @@ a:active {
 }
 
 
+hr {
+  background-color: #FFFFFF;
+  border: 0vw none;
+  color: #FFFFFF;
+  height: 0.1vw;
+  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
+}
+
 /* .image-button {
   display: contents;
   cursor: pointer;

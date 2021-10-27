@@ -28,7 +28,7 @@ const RecentReviewsList = ({ allUsers }) => {
 
     return (
         <>
-            <h4>RECENT REVIEWS</h4>
+            <h3>RECENT REVIEWS</h3>
             {recentReviewNodes}
         </>
     )

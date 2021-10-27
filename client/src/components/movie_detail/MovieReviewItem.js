@@ -56,10 +56,12 @@ const MovieReviewItem = ({ review }) => {
             <div className="movie-review-item-icon"><FaPoop /></div>
             <h5>MOVIE</h5>
             <p>{review.movieName}</p>
+            <hr/>
             <h6>USER</h6>
             <p>{review.viewer}</p>
             <h6>REVIEW</h6>
             <p>{review.comment}</p>
+            <hr/>
             <h6>SCORE</h6>
             <p>{review.score}</p>
             <h6>JÖBBIE RATING</h6>
