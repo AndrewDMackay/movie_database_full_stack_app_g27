@@ -3,10 +3,10 @@ import React from 'react';
 import MovieReviewList from './MovieReviewList';
 
 // import ReactPlayer from 'react'
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 
 import { FaPoop } from "react-icons/fa";
-import ReactPlayer from 'react-player/youtube';
+
 
 
 const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, youtubeVideo }) => {
