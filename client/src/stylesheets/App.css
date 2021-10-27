@@ -162,6 +162,9 @@ body {
   margin: 0.0vw;
   padding: 0.5vw;
 
+  min-width: 30.0vw;
+  min-height: 20.0vw;
+
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.0vw 0.0vw 0.6vw #92A0AD;
 }
