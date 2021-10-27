@@ -15,7 +15,6 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
     const handleClick = function () {
         onHomeClick();
 
-
     }
 
     // const handleFavouriteToggle = (MovieToUpdate) => {
@@ -48,15 +47,15 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
                 </div>
                 {/* add favourite tick box (see UserFavourite.js) */}
                 {/* add boxcomment  */}
-                <button className="custom-button" onClick={handleClick}>BACK</button>
+                <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
-            {/* <div className='YTplayer'>
-                <ReactPlayer url={youtubeVideo}/>
-            </div> */}
+            <div className='YTplayer'>
+                <ReactPlayer url={youtubeVideo} />
+            </div>
             <div>
-                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
+                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers} />
             </div>
-        </div>    
+        </div>
     )
 }
 

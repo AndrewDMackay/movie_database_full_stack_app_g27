@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import { FaPoop } from "react-icons/fa";
 
-import NavBar from '../components/NavBar';
+import NavBarNoSearch from '../components/NavBarNoSearch';
 
 
 const HomeContainer = () => {
@@ -48,7 +48,7 @@ const HomeContainer = () => {
     return (
         <>
             <div className="main-nav-bar-container">
-                <NavBar onTitleSearched={onTitleSearched} />
+                <NavBarNoSearch />
             </div>
             <div className="home-container">
                 <h1 className="home-heading">BÖGGIN JÖBBIES</h1>
