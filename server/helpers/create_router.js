@@ -64,7 +64,7 @@ const createRouter = function (collection) {
     
     // UPDATE - Update a user that already exisits..
     router.put('/:id', (req, res) => {
-        const id = req.params._id
+        const id = req.params.id
         const updatedData = req.body
         delete updatedData._id;
         collection.updateOne(

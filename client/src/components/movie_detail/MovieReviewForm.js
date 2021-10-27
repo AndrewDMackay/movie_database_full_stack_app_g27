@@ -23,7 +23,7 @@ const handleSubmit = (event) => {
     const newReview = {
         comment: comment,
         score: score,
-        movieName: selectedMovie.Title
+        movie: selectedMovie.Title
     }
     // console.log(newReview);
     // console.log(loggedIn);

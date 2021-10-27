@@ -69,6 +69,17 @@ const MovieContainer = () => {
         temp.push(user);
         setAllUsers(temp);
     }
+    
+    const saveUserReview = (updatedUser, review) => {
+        const copyUsers = [...allUsers]
+        const foundUser = copyUsers.find((user) => {
+            return user._id === updatedUser._id
+        })
+        foundUser.review.push(review)
+        const index = copyUsers.indexOf(updatedUser)
+        copyUsers[index] = foundUser
+        setAllUsers(copyUsers)
+    }
 
     const removeUser = (user) => {
         const temp = allUsers.map(s => s);
@@ -86,7 +97,7 @@ const MovieContainer = () => {
     const onNewReviewSubmit = (review) => {
         // console.log("review", review)
         updateUser(review, loggedIn._id).then((data) => {
-            addUser(data);
+            saveUserReview(loggedIn, review);
         })
     }
 
