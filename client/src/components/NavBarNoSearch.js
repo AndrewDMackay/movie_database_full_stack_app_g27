@@ -21,6 +21,9 @@ const NavBar = ({ }) => {
                     <li>
                         <Link to="/movies">MOVIES</Link>
                     </li>
+                    <li>
+                        <Link to="/reviews">REVIEWS</Link>
+                    </li>
                 </ul>
             </div>
         </>

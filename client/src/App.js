@@ -30,6 +30,7 @@ function App() {
             <Route exact path="/" component={HomeContainer} />
             <Route exact path="/movies" component={MovieContainer} />
             <Route exact path="/users" component={UserContainer} />
+            {/* <Route exact path="/reviews" component={<?>} /> */}
           </div>
         </div> 
       </>
