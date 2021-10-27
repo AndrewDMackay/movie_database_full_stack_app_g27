@@ -8,7 +8,6 @@ import MovieDetail from '../components/movie_detail/MovieDetail';
 import SearchBar from '../components/main_movie_page/SearchBar';
 import NavBar from '../components/NavBar';
 
-
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
 import { getUsers, getUser, deleteUser, postNewUser, updateUser } from '../services/MovieService'
@@ -42,10 +41,12 @@ const MovieContainer = () => {
     const onMovieClick = function (movie) {
         fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=30f7090a`)
             .then(res => res.json())
-            .then(data => setSelectedMovie(data))
-            .then(fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`))
-            .then(res => res.json())
-            .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items.id.videoId}`))
+            .then((data) => {
+                setSelectedMovie(data)
+                fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`)
+                    .then(res => res.json())
+                    .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items[0].id.videoId}`))
+            })
     }
  
 
@@ -120,8 +121,7 @@ const MovieContainer = () => {
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail youtubeVideo={youtubeVideo} selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers}/> : null}
-                {selectedMovie ? <MovieReviewForm selectedMovie={selectedMovie} onNewReviewSubmit={onNewReviewSubmit} loggedIn={loggedIn}/> : null}
+                {selectedMovie ? <MovieDetail youtubeVideo={youtubeVideo} selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
             </div>
             <div className="user-container">
                 <RecentReviewsList allUsers={allUsers} />
