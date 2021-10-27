@@ -25,7 +25,8 @@ const UserForm = ({ onNewUserSubmit }) => {
         const user = {
             username: name,
             email: email,
-            password: password
+            password: password,
+            review: []
         }
         onNewUserSubmit(user)
         setName("")

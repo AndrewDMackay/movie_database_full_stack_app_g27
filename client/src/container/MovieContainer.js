@@ -10,17 +10,19 @@ import NavBar from '../components/NavBar';
 
 import UserForm from '../components/user_page/UserForm'
 import UserLogin from '../components/user_page/UserLogIn'
-
-import { getUsers, getUser, deleteUser, postNewUser } from '../services/MovieService'
+import { getUsers, getUser, deleteUser, postNewUser, updateUser } from '../services/MovieService'
+import MovieReviewForm from '../components/movie_detail/MovieReviewForm';
+import RecentReviewsList from "../components/main_movie_page/RecentReviewsList";
 
 
 const MovieContainer = () => {
     const [movies, setMovies] = useState(null)
     const [selectedMovie, setSelectedMovie] = useState(null)
+    const [youtubeVideo, setYoutubeVideo] = useState(null)
     // From User Container.. 
     const [allUsers, setAllUsers] = useState([])
     const [loggedIn, setLoggedin] = useState(null)
-
+  
 
     // searches API by movie title
     const onTitleSearched = function (title) {
@@ -39,9 +41,14 @@ const MovieContainer = () => {
     const onMovieClick = function (movie) {
         fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=30f7090a`)
             .then(res => res.json())
-            .then(data => setSelectedMovie(data))
+            .then((data) => {
+                setSelectedMovie(data)
+                fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`)
+                    .then(res => res.json())
+                    .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items[0].id.videoId}`))
+            })
     }
-
+ 
 
     // const getMoviesByGenre = function(genre){
     //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
@@ -76,6 +83,11 @@ const MovieContainer = () => {
         })
     }
 
+    const onNewReviewSubmit = (review) => {
+        updateUser(review, loggedIn._id).then((data) => {
+        })
+    }
+
     const onUserDelete = (id) => {
         deleteUser(id).then((data) => {
             removeUser(data);
@@ -91,17 +103,10 @@ const MovieContainer = () => {
         setLoggedin(foundUser)
     }
 
-
-    // const getMoviesByGenre = function(genre){
-    //     fetch(`http://www.omdbapi.com/?t=${genre}apikey=30f7090a`)
-    //     .then(res => res.json())
-    //     .then(movies => setMovies(movies))
-    // }
-
-
     const onHomeClick = function () {
         setSelectedMovie(null);
     }
+
 
     return (
         <>
@@ -110,19 +115,21 @@ const MovieContainer = () => {
             </div>
             <div className="movie-container">
                 <div className="logo-icon"><FaPoop /></div>
-                <h1 className="logo-heading">BÖGGIN JÖBBIES</h1>
-                {!selectedMovie ? <h4>SEARCH MOVIES BY TITLE..</h4> : null}
+                <h1>THIS IS THE MOVIE CONTAINER</h1>
+                {!selectedMovie ? <h4>THIS IS THE SEARCH BAR..</h4> : null}
                 <div className="main-container-search-bar">
                     {!selectedMovie ? <SearchBar onTitleSearched={onTitleSearched} /> : null}
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
-                {selectedMovie ? <MovieDetail selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
+                {selectedMovie ? <MovieDetail youtubeVideo={youtubeVideo} selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
             </div>
             <div className="user-container">
-                <h1>USERS</h1>
+                <RecentReviewsList allUsers={allUsers} />
+            </div>
+            <div className="user-container">
+                <h1>THIS IS THE USER CONTAINER</h1>
                 <UserLogin onLoginSubmit={onLoginSubmit} />
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
-                {/* <UserDisplay users={allUsers} loggedIn={loggedIn} onLoginSubmit={onLoginSubmit} onUserDelete={onUserDelete} onNewUserSubmit={onNewUserSubmit} onUserClick={onUserClick} /> */}
             </div>
         </>
     )

@@ -51,7 +51,7 @@ const createRouter = function (collection) {
     // DESTROY - Delete a user by its ID..
 
     router.delete('/:id', (req, res) => {
-        const id = req.params.id
+        const id = req.params._id
         collection.deleteOne({ _id: ObjectID(id) })
             .then((result) => { res.json(result) })
             .catch((err) => {
@@ -64,8 +64,9 @@ const createRouter = function (collection) {
     
     // UPDATE - Update a user that already exisits..
     router.put('/:id', (req, res) => {
-        const id = req.params.id
+        const id = req.params._id
         const updatedData = req.body
+        delete updatedData._id;
         collection.updateOne(
             { _id: ObjectID(id) },
             { $set: updatedData }

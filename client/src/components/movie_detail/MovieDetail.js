@@ -2,25 +2,28 @@
 import React from 'react';
 import MovieReviewList from './MovieReviewList';
 
+// import ReactPlayer from 'react'
+import ReactPlayer from 'react-player/youtube'
+
 import { FaPoop } from "react-icons/fa";
+import ReactPlayer from 'react-player/youtube';
 
 
-const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers }) => {
+const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, youtubeVideo }) => {
 
 
     const handleClick = function () {
         onHomeClick();
 
-
     }
 
-    const handleFavouriteToggle = (MovieToUpdate) => {
-        const updatedMovies = movies.map((movie) => {
-            if(movie.title === MovieToUpdate.title){
-                movie.favourite = !movie.favourite
-            }
-            return movie
-        })}
+    // const handleFavouriteToggle = (MovieToUpdate) => {
+    //     const updatedMovies = movies.map((movie) => {
+    //         if(movie.title === MovieToUpdate.title){
+    //             movie.favourite = !movie.favourite
+    //         }
+    //         return movie
+    //     })}
 
 
     return (
@@ -46,10 +49,13 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers })
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>HOME</button>
             </div>
-            <div className="movie-review-list-container">
-                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
+            <div className='YTplayer'>
+                <ReactPlayer url={youtubeVideo} />
             </div>
-        </div>    
+            <div>
+                <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers} />
+            </div>
+        </div>
     )
 }
 
