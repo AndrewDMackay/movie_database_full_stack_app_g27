@@ -1,7 +1,10 @@
+
 import React from "react";
 import RecentReviewItem from "./RecentReviewItem";
 
+
 const RecentReviewsList = ({ allUsers }) => {
+
 
     const recentReviewList = []
 
@@ -17,16 +20,20 @@ const RecentReviewsList = ({ allUsers }) => {
         }
     }
 
+
     const recentReviewNodes = recentReviewList.map((review, index) => {
         return <RecentReviewItem review={review} key={index} />
     })
 
+
     return (
         <>
-            <h4>This is the RecentReviewsList</h4>
+            <h4>RECENT REVIEWS</h4>
             {recentReviewNodes}
         </>
     )
 }
 
+
 export default RecentReviewsList
+
