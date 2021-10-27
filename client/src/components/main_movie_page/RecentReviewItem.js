@@ -39,7 +39,11 @@ const RecentReviewItem = ({ review }) => {
                     )
         }  else {
             return (
-                <p>JÖBBIE RATING ERROR</p>
+                <div className="movie-review-item-rating-error">
+                    <div><FaPoop /></div>
+                    <p className="movie-review-item-rating-error-p">JÖBBIE RATING ERROR</p>
+                    <div><FaPoop /></div>
+                </div> 
             )
         }
     };

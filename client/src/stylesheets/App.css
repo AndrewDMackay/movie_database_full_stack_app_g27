@@ -423,7 +423,7 @@ a:active {
 
   margin: 1.25vw;
   padding: 1.0vw;
-  min-height: 10.0vw;
+  min-height: 15.0vw;
   min-width: 15.0vw;
 
   background-color: #090909;
@@ -443,7 +443,7 @@ a:active {
 
   margin: 1.25vw;
   padding: 1.0vw;
-  min-height: 10.0vw;
+  min-height: 15.0vw;
   min-width: 15.0vw;
 
   background-color: #090909;
@@ -518,7 +518,7 @@ a:active {
   border-radius: 50.0vw;
   box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
 
-  margin-top: 18.5vw;
+  margin-top: 23.25vw;
   padding-left: 0.9vw;
   padding-right: 0.9vw;
   padding-top: 0.1vw;
@@ -570,6 +570,28 @@ a:active {
   
   margin: 0.0vw;
   padding: 0.5vw;
+}
+
+
+.movie-review-item-rating-error {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  font-size: 1.0vw;
+  color: #FFFFFF;
+  
+  margin: 0.0vw;
+  padding: 0.5vw;
+}
+
+
+.movie-review-item-rating-error-p {
+  padding: 0.75vw;
 }
 
 

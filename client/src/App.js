@@ -7,6 +7,7 @@ import './stylesheets/App.css';
 import HomeContainer from './container/HomeContainer';
 import MovieContainer from './container/MovieContainer';
 import UserContainer from './container/UserContainer';
+import RecentReviewsList from './components/main_movie_page/RecentReviewsList';
 
 import NavBar from './components/NavBar';
 import SearchBar from './components/main_movie_page/SearchBar';
@@ -30,7 +31,6 @@ function App() {
             <Route exact path="/" component={HomeContainer} />
             <Route exact path="/movies" component={MovieContainer} />
             <Route exact path="/users" component={UserContainer} />
-            {/* <Route exact path="/reviews" component={<?>} /> */}
           </div>
         </div> 
       </>
