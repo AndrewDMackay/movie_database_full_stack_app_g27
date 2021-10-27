@@ -142,7 +142,7 @@ const MovieContainer = () => {
             </div>
             <div className="user-container">
                 <h1>USERS</h1>
-                <UserLogin onLoginSubmit={onLoginSubmit} />
+                {!loggedIn ?<UserLogin onLoginSubmit={onLoginSubmit} /> : null}
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
             </div>
         </>
