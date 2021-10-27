@@ -43,9 +43,9 @@ const MovieContainer = () => {
         fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=30f7090a`)
             .then(res => res.json())
             .then(data => setSelectedMovie(data))
-            .then(fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`))
-            .then(res => res.json())
-            .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items.id.videoId}`))
+            // .then(fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${movie.Title}+${movie.Year}+trailer&key=AIzaSyADzRT1UT3gLjoE9EswWkVDc65LgFe6RGU`))
+            // .then(res => res.json())
+            // .then(videoData => setYoutubeVideo(`https://www.youtube.com/watch?v=${videoData.items.id.videoId}`))
     }
  
 
@@ -83,7 +83,9 @@ const MovieContainer = () => {
     }
 
     const onNewReviewSubmit = (review) => {
+        console.log("review", review)
         updateUser(review, loggedIn._id).then((data) => {
+            addUser(data);
         })
     }
 
