@@ -196,10 +196,10 @@ body {
   text-align: center;
 
   margin: 1.0vw;
-  padding: 0.5vw; 
+  padding: 1.5vw; 
   min-width: 23.0vw;
-  min-height: .0vw;
-  line-height: 0.5vw;
+  min-height: 25.0vw;
+  line-height: 1.0vw;
 
   border: 0.1vw solid #F8F8FF;
   box-shadow: 0.0vw 0.0vw 0.15vw #92A0AD;
@@ -365,23 +365,20 @@ a {
   cursor: pointer;
 }
 
-/* a:link { 
 
+/* a:link { 
 }
 
 
 a:visited { 
-
 }
 
 
 a:hover { 
-
 }
 
 
 a:active { 
-  
 } */
 
 
@@ -461,9 +458,9 @@ a:active {
   align-content: center;
   justify-content: center;
 
-  margin: 5.0vw;
+  margin: 1.25vw;
   padding: 1.0vw;
-  min-height: 10.0vw;
+  min-height: 15.0vw;
   min-width: 15.0vw;
 
   background-color: #090909;
@@ -556,6 +553,15 @@ a:active {
 }
 
 
+.movie-review-item-icon {
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+
 .movie-review-item-rating-icons {
   display: flex;
   flex-direction: row;
@@ -568,8 +574,13 @@ a:active {
   font-size: 0.5vw;
   color: #FFFFFF;
   
-  margin: 0.0vw;
   padding: 0.5vw;
+  margin-left: 10.0vw;
+  margin-right: 10.0vw;
+  min-width: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
 }
 
 
@@ -582,11 +593,16 @@ a:active {
   align-content: center;
   justify-content: center;
   
-  font-size: 1.0vw;
+  font-size: 0.75vw;
   color: #FFFFFF;
   
   margin: 0.0vw;
-  padding: 0.5vw;
+  padding: 0.0vw;
+  min-width: 1.0vw;
+  min-height: 1.0vw;
+
+  border: 0.1vw solid #B2B2B2;
+  box-shadow: 0.0vw 0.0vw 1.0vw #92A0AD;
 }
 
 

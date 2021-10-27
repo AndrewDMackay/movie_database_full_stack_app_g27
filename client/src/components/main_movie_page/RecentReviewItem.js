@@ -52,7 +52,7 @@ const RecentReviewItem = ({ review }) => {
     return (
         <div className="movie-review-item">
             <div className="movie-review-item-icon"><FaPoop /></div>
-            <h4>THIS IS A RECENT REVIEW ITEM</h4>
+            <h5>MOVIE</h5>
             <p>{review.movieName}</p>
             <h6>USER</h6>
             <p>{review.viewer}</p>

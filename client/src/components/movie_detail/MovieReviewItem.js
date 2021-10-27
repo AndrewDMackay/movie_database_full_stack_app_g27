@@ -40,7 +40,11 @@ const MovieReviewItem = ({ review }) => {
                     )
         }  else {
             return (
-                <p>JÖBBIE RATING ERROR</p>
+                <div className="movie-review-item-rating-error">
+                <div><FaPoop /></div>
+                <p className="movie-review-item-rating-error-p">JÖBBIE RATING ERROR</p>
+                <div><FaPoop /></div>
+            </div> 
             )
         }
     };
@@ -50,6 +54,8 @@ const MovieReviewItem = ({ review }) => {
 
         <div className="movie-review-item">
             <div className="movie-review-item-icon"><FaPoop /></div>
+            <h5>MOVIE</h5>
+            <p>{review.movieName}</p>
             <h6>USER</h6>
             <p>{review.viewer}</p>
             <h6>REVIEW</h6>
