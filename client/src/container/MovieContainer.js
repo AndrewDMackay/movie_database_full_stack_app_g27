@@ -84,7 +84,9 @@ const MovieContainer = () => {
     }
 
     const onNewReviewSubmit = (review) => {
+        // console.log("review", review)
         updateUser(review, loggedIn._id).then((data) => {
+            addUser(data);
         })
     }
 
@@ -122,6 +124,7 @@ const MovieContainer = () => {
                 </div>
                 {!selectedMovie ? <MovieList movies={movies} onMovieClick={onMovieClick} /> : null}
                 {selectedMovie ? <MovieDetail youtubeVideo={youtubeVideo} selectedMovie={selectedMovie} onHomeClick={onHomeClick} loggedIn={loggedIn} allUsers={allUsers} /> : null}
+                {selectedMovie ? <MovieReviewForm selectedMovie={selectedMovie} onNewReviewSubmit={onNewReviewSubmit} loggedIn={loggedIn}/> : null}
             </div>
             <div className="user-container">
                 <RecentReviewsList allUsers={allUsers} />

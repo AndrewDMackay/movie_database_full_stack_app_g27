@@ -21,10 +21,12 @@ const handleSubmit = (event) => {
         score: score,
         movieName: selectedMovie.Title
     }
-    console.log(newReview);
-    console.log(loggedIn);
-    onNewReviewSubmit(loggedIn.review.push(newReview))
-    console.log(loggedIn);
+    // console.log(newReview);
+    // console.log(loggedIn);
+    const copyUser = {...loggedIn}
+    loggedIn.review.push(newReview)
+    onNewReviewSubmit(copyUser)
+    // console.log(loggedIn);
     setComment("")
     setScore(0)
 }

@@ -50,9 +50,9 @@ const MovieDetail = ({ movies, selectedMovie, onHomeClick, loggedIn, allUsers, y
                 {/* add boxcomment  */}
                 <button className="custom-button" onClick={handleClick}>BACK</button>
             </div>
-            <div className='YTplayer'>
+            {/* <div className='YTplayer'>
                 <ReactPlayer url={youtubeVideo}/>
-            </div>
+            </div> */}
             <div>
                 <MovieReviewList selectedMovie={selectedMovie} loggedIn={loggedIn} allUsers={allUsers}/>
             </div>
