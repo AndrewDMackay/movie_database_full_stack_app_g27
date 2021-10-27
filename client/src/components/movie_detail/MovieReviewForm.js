@@ -1,18 +1,22 @@
 
 import React, { useState } from 'react'
 
+
 const MovieReviewForm = ({loggedIn, selectedMovie, onNewReviewSubmit}) => {
 
 const [comment, setComment] = useState("")
 const [score, setScore] = useState("")
 
+
 const handleCommentChange = (event) => {
     setComment(event.target.value)
 }
 
+
 const handleScoreChange = (event) => {
     setScore(event.target.value)
 }
+
 
 const handleSubmit = (event) => {
     event.preventDefault()
@@ -30,6 +34,7 @@ const handleSubmit = (event) => {
     setComment("")
     setScore(0)
 }
+
     return (
             <>
             <div className="movie-review-form">
@@ -43,6 +48,7 @@ const handleSubmit = (event) => {
             </>
             )
 };
+
 
 export default MovieReviewForm
 

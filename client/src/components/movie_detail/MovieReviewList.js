@@ -22,6 +22,7 @@ const MovieReviewList = ({ selectedMovie, loggedIn, allUsers }) => {
         }
     }
 
+    
     const movieReviews = reviewList.filter((review) => review.movieName === selectedMovie.Title)
 
     const reviewNodes = movieReviews.map((review, index) => {

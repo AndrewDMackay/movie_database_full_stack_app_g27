@@ -1,6 +1,7 @@
 
 import React from 'react'
 
+
 const FavouriteMoviesList = ({Movies, SelectedMovies}) => {
     const filteredMovies = movies.filter((movie) => {
         return movie.favourite
@@ -17,7 +18,7 @@ const FavouriteMoviesList = ({Movies, SelectedMovies}) => {
     return(
         <>
         <div>
-            <h2>Favourite Movies Wall</h2>
+            <h2>FAVOURITE MOVIES</h2>
                 <div className="favourite-movies">
                 {listNodes}
                 </div>
