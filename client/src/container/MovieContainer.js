@@ -131,12 +131,12 @@ const MovieContainer = () => {
                 {selectedMovie ? <MovieReviewForm selectedMovie={selectedMovie} onNewReviewSubmit={onNewReviewSubmit} loggedIn={loggedIn}/> : null}
             </div>
             <div className="user-container">
-                <RecentReviewsList allUsers={allUsers} />
-            </div>
-            <div className="user-container">
                 <h2>USERS</h2>
                 {!loggedIn ?<UserLogin onLoginSubmit={onLoginSubmit} /> : null}
                 <UserForm onNewUserSubmit={onNewUserSubmit} />
+            </div>
+            <div className="user-container">
+                <RecentReviewsList allUsers={allUsers} />
             </div>
         </>
     )
